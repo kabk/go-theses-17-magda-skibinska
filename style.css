@@ -25,13 +25,22 @@ body {
       }
 
 .paragraph {
+    /*overflow-x: auto;*/
     position: relative;
     color:#234d09;
     font: 13px Helvetica;
     width: 500px;
+    z-index: 1;
+    
 }
+::-webkit-scrollbar {
+    width: 1px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 
 .important {
     padding: 5px;
+    position: relative;
     background-color: rgba( 251, 172, 236, 0.516 );
 }

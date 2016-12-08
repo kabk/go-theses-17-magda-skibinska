@@ -11,7 +11,9 @@
     
         
 <!--touch screen-->
-<script type="text/javascript" src="http://www.pureexample.com/js/lib/jquery.ui.touch-punch.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    <script src="jquery.ui.touch-punch.min.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -27,10 +29,10 @@
     <meta property="dc:creator" content="Magda Skibinska" />
   
 
-    
+    <script>$( function() {$('#widget').draggable();})</script>
   <script>
       $( function() {
-        $( ".paragraph" ).resizable().draggable();
+        $( '.paragraph' ).resizable().draggable();
       } ) 
   </script>  
     
@@ -41,6 +43,8 @@
    
     
 <p class="h1">INSTRUCTIONS</p>
+    
+    <div id="widget">test</div>
     
 <div class="paragraph important">
     <p>
