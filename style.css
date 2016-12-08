@@ -7,11 +7,11 @@ body {
     
 }
 
-.ui-resizable-ghost { border: 1px dotted gray; }
 
-.ui-draggable, .ui-droppable {
+
+/*.ui-draggable, .ui-droppable {
     background-position: top;
-}
+}*/
 
 
 
@@ -32,5 +32,5 @@ body {
 }
 
 .important {
-    background-color: aquamarine;
+    background-color: grey;
 }
