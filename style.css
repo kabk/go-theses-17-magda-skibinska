@@ -1,0 +1,36 @@
+body {
+  
+
+    padding: 5x;
+    font: 25px Helvetica;
+    
+    
+}
+
+.ui-resizable-ghost { border: 1px dotted gray; }
+
+.ui-draggable, .ui-droppable {
+    background-position: top;
+}
+
+
+
+.h1 {
+    display: block;    
+    position: absolute;
+    color: #1529da;
+    margin: 0.0px 0.0px 0.0px 0.0px; 
+    font: 44px Helvetica;
+    width:100px;
+      }
+
+.paragraph {
+    position: relative;
+    color:#234d09;
+    font: 13px Helvetica;
+    width: 300px;
+}
+
+.important {
+    background-color: aquamarine;
+}
