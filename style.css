@@ -16,11 +16,22 @@ body {
 
 
 .h1 {
+    left:10vw;
     display: block;    
     position: absolute;
-    color: #1529da;
+    color: rgba( 0, 0, 0, 0.516 );
     margin: 0.0px 0.0px 0.0px 0.0px; 
     font: 44px Helvetica;
+    width:100px;
+      }
+
+.h2 {
+    left:40vw;
+    display: block;    
+    position: absolute;
+    color: #000000;
+    margin: 0.0px 0.0px 0.0px 0.0px; 
+    font: 34px Helvetica;
     width:100px;
       }
 

@@ -28,26 +28,32 @@
     <meta property="og:image" content="https://kabk.github.io/go-theses-17-magda-skibinska/julius_koller.png" />
     <meta property="dc:creator" content="Magda Skibinska" />
   
-<!--test paragraph-->
-    <script>$( function() {$('#widget').draggable();})</script>
- <!-- end of test paragraph-->
-    
+<!--.widget drag-->
+    <script>
+        $( function() {
+            
+            $('.widget').draggable();
+        })
+    </script>
+ <!-- -->
+
+<!--.paragraph drag & scale-->
     <script>
       $( function() {
 
         $( '.paragraph' ).resizable().draggable();
       } ) 
   </script>  
-    
+<!-- -->
 </head>
    
     
 <body>
    
     
-<p class="h1">INSTRUCTIONS</p>
+<div class="widget"> <p class="h1">INSTRUCTIONS</p></div>
     
-    <div id="widget">Playing Rules</div>
+    <div class="widget"> <p class="h2">Plays by the Rules</p></div>
     
 <div class="paragraph important ui-draggable">
     <p>
