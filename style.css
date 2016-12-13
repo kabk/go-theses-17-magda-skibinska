@@ -27,8 +27,8 @@ body {
 .paragraph {
     /*overflow-x: auto;*/
     position: relative;
-    color:#234d09;
-    font: 13px Helvetica;
+    color:#000;
+    font: 14px Helvetica;
     width: 500px;
     z-index: 1;
     
@@ -42,5 +42,5 @@ body {
 .important {
     padding: 5px;
     position: relative;
-    background-color: rgba( 251, 172, 236, 0.516 );
+    background-color: rgba( 43, 43, 43, 0.116 );
 }
