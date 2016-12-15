@@ -1,19 +1,15 @@
 body {
-  
 
     padding: 5x;
-    font: 25px Helvetica;
-    
+    font-family: "Helvetica", sans-serif;
     
 }
 
-
-
+/*
 .ui-draggable, .ui-droppable {
     background-position: top;
 }
-
-
+*/
 
 .h1 {
     left:10vw;
@@ -23,7 +19,7 @@ body {
     margin: 0.0px 0.0px 0.0px 0.0px; 
     font: 44px Helvetica;
     width:100px;
-      }
+      z-index:100;}
 
 .h2 {
     left:40vw;
@@ -34,6 +30,20 @@ body {
     font: 34px Helvetica;
     width:100px;
       }
+.h3 {
+    left: 100px;
+    position: absolute;
+    color: #ab3030;
+    margin: 0.0px 0.0px 0.0px 0.0px; 
+    font: 34px Helvetica;
+ 
+      }
+
+
+li { display: block; }
+ul { display:block;
+position:absolute;
+font-family: inherit}
 
 .paragraph {
     /*overflow-x: auto;*/
@@ -44,14 +54,23 @@ body {
     z-index: 1;
     
 }
-::-webkit-scrollbar {
-    width: 1px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
+
 
 
 .important {
     padding: 5px;
     position: relative;
     background-color: rgba( 43, 43, 43, 0.116 );
+}
+
+@media print {
+    body{ 
+        color: #ff0000 !important;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 18px;
+    }
 }

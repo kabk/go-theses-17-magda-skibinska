@@ -32,24 +32,69 @@
     <script>
         $( function() {
             
-            $('.widget').draggable(){delay: 100};
+        $('.widget').draggable();
         })
-    </script>
- 
 
+    </script>
+    
 <!--.paragraph drag & scale-->
     <script>
+   
       $( function() {
 
-        $( '.paragraph' ).resizable().draggable(){delay: 100};
+        $('.paragraph').resizable().draggable();
       } ) 
   </script>  
+    
+   <script type="text/javascript">
+	$(function(){
+		$('.randomize li').each(function(){
+			$(this).hide();
+		});
+		var min = 0;
+		var max = $('.randomize li').length;
+		var randomLi = Math.floor(Math.random() * (max - min)) + min;
+		$('.randomize li').eq(randomLi).show();
+	});
+</script>
+    
+    
 
 </head>
    
     
 <body>
-   
+    
+ 
+
+<ul class="randomize h3">
+    <li>
+        Introduction
+    </li>
+    <li>
+        Lorem Ipsum
+    </li>
+    <li>
+        Dolor Sit Amet
+    </li>
+    <li>
+        <img src="images/julius_koller.png">
+
+    </li>
+</ul>
+  <!-- more lists same function test (didnt work - displayed only first list or only the second)  
+<ul class="randomize ui-draggable h2">
+        <li>
+    1
+    </li>
+        <li>
+    2
+    </li>
+        <li>
+    3
+    </li>
+</ul>
+--->
     
 <div class="widget"> <p class="h1">INSTRUCTIONS</p></div>
     
