@@ -2,14 +2,15 @@ body {
 
     padding: 5x;
     font-family: "Helvetica", sans-serif;
-    
+      
 }
 
-/*
+
 .ui-draggable, .ui-droppable {
     background-position: top;
+      display:block;
 }
-*/
+
 
 .h1 {
     left:10vw;
@@ -17,7 +18,7 @@ body {
     position: absolute;
     color: rgba( 0, 0, 0, 0.516 );
     margin: 0.0px 0.0px 0.0px 0.0px; 
-    font: 44px Helvetica;
+    font-size: 44px;
     width:100px;
       z-index:100;}
 
@@ -27,7 +28,7 @@ body {
     position: absolute;
     color: #000000;
     margin: 0.0px 0.0px 0.0px 0.0px; 
-    font: 34px Helvetica;
+    font-size: 34px;
     width:100px;
       }
 .h3 {
@@ -35,7 +36,7 @@ body {
     position: absolute;
     color: #ab3030;
     margin: 0.0px 0.0px 0.0px 0.0px; 
-    font: 34px Helvetica;
+    font: 34px;
  
       }
 
@@ -49,17 +50,51 @@ font-family: inherit}
     /*overflow-x: auto;*/
     position: relative;
     color:#000;
-    font: 14px Helvetica;
+    font: 25px Helvetica;
     width: 500px;
-    z-index: 1;
+    z-index: 1;   
+    min-width:100px;
     
+}
+.paragraph-small {
+    /*overflow-x: auto;*/
+    position: absolute;
+    top:0px;
+    color:#000;
+    font: 10px Helvetica;
+    width: 500px;
+    z-index: 1;   
+    min-width:100px;
+    background: rgba( 171, 48, 48, 0.547 );
+}
+
+.ref {
+
+    font:10px "Times";
+    position: relative;
+    bottom: 2px;
+    
+}
+
+.ref .bibliography {
+    display: none;
+}
+
+.ref:hover .bibliography {
+    display: inherit;
 }
 
 
 
+.notes{
+    width:50%;
+    right:0px;
+}
+
+
 .important {
     padding: 5px;
-    position: relative;
+    position: absolute;
     background-color: rgba( 43, 43, 43, 0.116 );
 }
 
