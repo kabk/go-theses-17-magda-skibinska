@@ -78,7 +78,7 @@ font-family: inherit}
 
 .ref .bibliography {
     display: none;
-    line-height: 1px;
+    line-height: 0.1px;
 }
 
 .ref:hover .bibliography {
@@ -108,6 +108,6 @@ font-family: inherit}
 
 @media screen and (min-width: 480px) {
     body {
-        font-size: 18px;
+        font-size: 48px;
     }
 }
