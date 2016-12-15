@@ -2,7 +2,7 @@ body {
 
     padding: 5x;
     font-family: "Helvetica", sans-serif;
-      
+    width: 1080px;
 }
 
 
@@ -78,6 +78,7 @@ font-family: inherit}
 
 .ref .bibliography {
     display: none;
+    line-height: 1px;
 }
 
 .ref:hover .bibliography {
@@ -87,6 +88,7 @@ font-family: inherit}
 
 
 .notes{
+    position: absolute;
     width:50%;
     right:0px;
 }
