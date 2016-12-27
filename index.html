@@ -23,14 +23,11 @@
     <script src="jquery.ui.touch-punch.min.js"></script> 
 
     
-     <title>Playing rules</title>
+    <title>ALL WORK AND NO PLAY</title>
     <meta name="description" content="1. Think of how you would like to read. 2. Read following your choice of direction. 3. Follow the rules above." />
-    <meta property="og:title" content="Take the time to read" />
+    <meta property="og:title" content="ALL WORK AND NO PLAY" />
     <meta property="og:image" content="https://kabk.github.io/go-theses-17-magda-skibinska/julius_koller.png" />
     <meta property="dc:creator" content="Magda Skibinska" />
-    
- 
-      </script>
     
 <!--.widget drag-->
     <script>
@@ -39,18 +36,6 @@
             movements +=1;
             console.log(movements + " movements!");
         }
-        
-        $( function() {
-            
-        $('.widget').draggable ({ containment: "#containment-wrapper", scroll: false });
-        })
-
-    </script>
-     <script>
-    $(function() { 
-    
-//    $( "#draggable" ).draggable({ containment: "window" }); 
-//    });
     </script>
     
 <!--.paragraph drag & scale-->
@@ -61,17 +46,9 @@
         $('.paragraph').resizable({ grid: [ 40, 40 ] }).draggable({ grid: [ 40, 40 ], stop: updateMovements });
           
       });
-      
-      $('.paragraph').bind('dragstop', function(){ alert("drag end");});
-  </script>  
-    
-      <script>
-   
-      $( function() {
-
-        $('.paragraph-small').resizable().draggable();
-      } ) 
-  </script> 
+       
+//      $('.paragraph').bind('dragstop', function(){ alert("drag end");});
+</script>  
   
 <script type="text/javascript">
     $(document).ready(function(){
@@ -92,6 +69,7 @@
 		$('.randomize li').eq(randomLi).show();
 	});
 </script>
+    
     
     <script>
     // Hide Header on on scroll down
@@ -134,7 +112,9 @@ function hasScrolled() {
 }
     </script>
 
-    
+
+
+
 
     
 
@@ -144,7 +124,11 @@ function hasScrolled() {
 <body>
     
 
-    <header class="nav-down"><p class="h2"> On the next day or whenever</p></header>
+<header class="nav-down">
+    <div id="title">All work and no play
+    <div id="info">Magda Skibinska</div></div>
+    </header>
+    
     <!--- 
 <ul class="randomize h3">
     <li>
@@ -176,21 +160,77 @@ function hasScrolled() {
 </ul>
 --->
    
-
-<div class="paragraph"><p class="h1">0.&emsp;INSTRUCTIONS</p><br>
+<!--
+<div class="paragraph" >
+    <p class="h1">0.&emsp;SOME TITLE</p><br>
     <tr>
-&emsp;&emsp;The platform can begin with instructions or a disclaimer that there is no instructions.<br>
-&emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
-&emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform with oneself.(<span class="ref">Marshall McLuhan</a></span>)<sub>1</sub><br>
-&emsp;&emsp;The system serves a purpose of improvising a reading method where decisions have to be made fast in order to gather information. Like a system of alternative versions. On what parameters could the order of text change?<br>
-&emsp;&emsp;Should the new things be on top? Shorter paragraphs placed in groups can allow for more improvised way of reading.<br>     
-&emsp;&emsp;All the text can be on top of each other. The viewer will be able to redistribute the content in order to make the reading rules according to his/her own choosing.<br>
+        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text     
+        some text some textsome text some text some text some text some text some text some text some text some text  some text some text
     </tr>
-   
-<div class="footnote">: (04:34) ABC Radio National Network. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/
-</div></div>
+</div>
+    
+-->
+<!--
+<div class="paragraph image">
+    <img src="images/julius_koller.png"/>
+    <div class="description">
+        <p>Description Description Description Description Description Description Description</p>
+    </div>
+</div>
+    
+-->
+<div class="paragraph" >
+    <p class="h1">0.&emsp;SOME TITLE</p><br>
+    <tr>
+        some text
+    </tr>
+</div>
+    
+<div class="paragraph" >
+    <p class="h1">0.&emsp;SOME TITLE</p><br>
+    <tr>
+        some text
+    </tr>
+</div>
+    
+<div class="paragraph" >
+    <p class="h1">0.&emsp;SOME TITLE</p><br>
+    <tr>
+        some text
+    </tr>
+</div>
+    
+<!--
+<div class="paragraph" >
+    <p class="h1">0.&emsp;SOME TITLE</p><br>
+    <tr>
+        some text
+    </tr>
+</div>
+-->
+    
+    
+
+<div class="paragraph">
+    <p class="h1">0.&emsp;INSTRUCTIONS</p><br>
+        <tr>
+        <br>
+        The platform can begin with instructions or a disclaimer that there is no instructions.
+            <br>
+        &emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
+        &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform with oneself.(<span class="footnote">Marshall McLuhan</span>)<sub>1</sub><br>
+        &emsp;&emsp;The system serves a purpose of improvising a reading method where decisions have to be made fast in order to gather information. Like a system of alternative versions. On what parameters could the order of text change?<br>
+        &emsp;&emsp;Should the new things be on top? Shorter paragraphs placed in groups can allow for more improvised way of reading.<br>     
+        &emsp;&emsp;All the text can be on top of each other. The viewer will be able to redistribute the content in order to make the reading rules according to his/her own choosing.<br><br>
+       
+            <span class="footnote"> (04:34), ABC Radio National Network. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/
+            </span>
+             </tr>
+</div>
      
-<div class="paragraph"><p class="h1">1.&emsp;INTRODUCTION</p><br>
+
+<div class="paragraph">
+    <p class="h1">1.&emsp;INTRODUCTION</p><br>
     <tr valign="top">
 There exists a saying that intelligent people do not get bored. I did hear that sentence often, when I was a child. On the contrary hearing that, sometimes made me feel like I should not have allowed myself to feel bored in the first place. This is most of all told to the children by their parents, most likely when they do not have time to amuse them. Not doing anything can be defined otherwise than just boredom. The general tendency is, that when we start getting bored we feel the urge to get creative in order to escape the feeling of lack of purpose. As the ability to create an engaging task (or game) for oneself in this example, can serve as a proof of someone’s intelligence. On the contrary, one might also say that high intelligence requires constant supply of stimuli. Correspondingly, the synonyms of intelligence are amongst others: inventiveness, resourcefulness and creativity. Therefore, not only is the intelligence about the possession of the knowledge, but also about the practical aspect of being skilled in profiting inventively from it. Because an active mind needs a continual change in order to be satisfied, with only one task to do, it is most likely to get bored relatively fast. The possible solution to this problem, was subject of Søren Kierkegaard ‘rotation method’. He elaborated on this problem in the 1843 work Either/Or: A Fragment of Life. Following the line of argumentation of this Danish philosopher, in order to avoid boredom, constant shifting between performed tasks is necessary. The result would theoretically be the certainty that everyone can be provided with more-less constant satisfaction derived from their actions. Without a doubt, the level of proficiency in creativity necessary for such inventiveness needs to be high. The individual seeking for such satisfactory life is referred to as an aesthete (a person that values beauty in life, from Greek aisthētḗs – one who perceives). (retrieved from dictionary.com)
 
@@ -201,9 +241,12 @@ Kierkegaard elaborates further on boredom as emptiness. Concluding that boredom 
 Nowadays, this problem of overstimulation and simultaneous existential boredom can be valid more than ever. Furthermore, all activities no matter how often changed from one to another, will cease being captivating at some point. Eventually the boredom ‘avoidant’ personality will say: “I don’t feel like doing anything. I don’t feel like riding – the motion is too powerful; I don’t feel like walking – it is too tiring; I don’t feel like lying down, for either I have to stay down, and I don’t feel like doing that or I would have to get up again, and I don’t feel like doing that, either. Summa Summarum: I don’t feel like doing anything.” (Either/Or, p. 4)
 Although threatened by the imminent possibility of ending, this approach can be an attempt of experiencing a more meaningful life. 
 (World Heritage Encyclopedia. “Rotation Method”. Retrieved from http://worldebooklibrary.net)
+        <br>
     </tr>
 </div>  
 
+
+<!--
 <div class="paragraph"><p class="h1">2.&emsp;DISCOVERY IN CHANGING</p><br>
     <tr valign="top">
 On a map/multi-centered text layout things are updated locally while the other areas can be left unchanged for long time, the content does not only have contextual location within the clouds of different paragraphs but also a physical location in space that I remember and use it to locate it. So the text is placed according to its relation to other texts and sometimes its continued (for example) only in the top left direction. I also have a tendency to focus more on the top parts than the bottom parts, and the ‘lower placed’ content is more abstract or ‘not yet explained.’
@@ -216,6 +259,7 @@ Creating within a system of constrictions is always a necessity at some point of
     
     </tr>
 </div>
+-->
 
 </body>
 </html>
