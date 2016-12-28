@@ -34,7 +34,7 @@
         var movements = 0;
         var updateMovements = function() {
             movements +=1;
-            console.log(movements + " movements!");
+            console.log(movements + " movements");
         }
     </script>
     
@@ -47,16 +47,16 @@
           
       });
        
-//      $('.paragraph').bind('dragstop', function(){ alert("drag end");});
-</script>  
-  
+    </script>
+    
+
 <script type="text/javascript">
     $(document).ready(function(){
-//        $('.paragraph').find('p').not('.h1').hide(); 
+//       $('.paragraph').find('p').not('.h1').hide(); 
     });
     
 </script>    
-    
+
     
    <script type="text/javascript">
 	$(function(){
@@ -70,9 +70,10 @@
 	});
 </script>
     
-    
+ 
+
     <script>
-    // Hide Header on on scroll down
+   
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -113,8 +114,21 @@ function hasScrolled() {
     </script>
 
 
+<script>
+$(document).ready(function() {
+    var a = 3;
+    $('.paragraph').draggable({
+   start: function(event, ui) { $(this).css("z-index", a++); }
+});
+    $('#dragZone div').click(function() {
+        $(this).addClass('top').removeClass('bottom');
+        $(this).siblings().removeClass('top').addClass('bottom');
+        $(this).css("z-index", a++);
 
+    });
+});
 
+</script>
 
     
 
@@ -124,7 +138,7 @@ function hasScrolled() {
 <body>
     
 
-<header class="nav-down">
+<header class="nav-down no-print">
     <div id="title">All work and no play
     <div id="info">Magda Skibinska</div></div>
     </header>
@@ -179,6 +193,7 @@ function hasScrolled() {
 </div>
     
 -->
+<!--
 <div class="paragraph" >
     <p class="h1">0.&emsp;SOME TITLE</p><br>
     <tr>
@@ -199,6 +214,7 @@ function hasScrolled() {
         some text
     </tr>
 </div>
+-->
     
 <!--
 <div class="paragraph" >
@@ -211,39 +227,70 @@ function hasScrolled() {
     
     
 
-<div class="paragraph">
-    <p class="h1">0.&emsp;INSTRUCTIONS</p><br>
-        <tr>
-        <br>
+<div class="paragraph ">
+    <p class="h1">0.&emsp;INSTRUCTIONS</p><br><br> 
+    <tr>
         The platform can begin with instructions or a disclaimer that there is no instructions.
-            <br>
+        <br>
         &emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
-        &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform with oneself.(<span class="footnote">Marshall McLuhan</span>)<sub>1</sub><br>
+        &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform with oneself.(<span class="source">Marshall McLuhan</span>)<sub>1</sub><br>
         &emsp;&emsp;The system serves a purpose of improvising a reading method where decisions have to be made fast in order to gather information. Like a system of alternative versions. On what parameters could the order of text change?<br>
         &emsp;&emsp;Should the new things be on top? Shorter paragraphs placed in groups can allow for more improvised way of reading.<br>     
-        &emsp;&emsp;All the text can be on top of each other. The viewer will be able to redistribute the content in order to make the reading rules according to his/her own choosing.<br><br>
-       
-            <span class="footnote"> (04:34), ABC Radio National Network. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/
-            </span>
-             </tr>
+        &emsp;&emsp;All the text can be on top of each other. The viewer will be able to redistribute the content in order to make the reading rules according to his/her own choosing.<br><br><br>
+        <span class="footnote"><sub>1</sub> (04:34), ABC Radio National Network. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/</span>
+     </tr>
 </div>
      
 
 <div class="paragraph">
-    <p class="h1">1.&emsp;INTRODUCTION</p><br>
-    <tr valign="top">
-There exists a saying that intelligent people do not get bored. I did hear that sentence often, when I was a child. On the contrary hearing that, sometimes made me feel like I should not have allowed myself to feel bored in the first place. This is most of all told to the children by their parents, most likely when they do not have time to amuse them. Not doing anything can be defined otherwise than just boredom. The general tendency is, that when we start getting bored we feel the urge to get creative in order to escape the feeling of lack of purpose. As the ability to create an engaging task (or game) for oneself in this example, can serve as a proof of someone’s intelligence. On the contrary, one might also say that high intelligence requires constant supply of stimuli. Correspondingly, the synonyms of intelligence are amongst others: inventiveness, resourcefulness and creativity. Therefore, not only is the intelligence about the possession of the knowledge, but also about the practical aspect of being skilled in profiting inventively from it. Because an active mind needs a continual change in order to be satisfied, with only one task to do, it is most likely to get bored relatively fast. The possible solution to this problem, was subject of Søren Kierkegaard ‘rotation method’. He elaborated on this problem in the 1843 work Either/Or: A Fragment of Life. Following the line of argumentation of this Danish philosopher, in order to avoid boredom, constant shifting between performed tasks is necessary. The result would theoretically be the certainty that everyone can be provided with more-less constant satisfaction derived from their actions. Without a doubt, the level of proficiency in creativity necessary for such inventiveness needs to be high. The individual seeking for such satisfactory life is referred to as an aesthete (a person that values beauty in life, from Greek aisthētḗs – one who perceives). (retrieved from dictionary.com)
-
-As the land should be left fallow for certain amount of time in order to remain fertile, likewise the aesthete should be constantly switching from one task to another, and continue to change himself constantly. This anti-boredom (or possibly anti-burn out) method can be applied as a hedonistic tool in gaining satisfaction from the ‘aesthetic’ way of life. However, agreeing with the philosopher, this repetitive search for novel, ultimately leads to a state of despair. As a result, the aesthete might ultimately face the impossibility of commitment to one thing – since commitment requires repetition of one activity. This ultimately superficial in its core approach, as there is no happiness on a path leading from one extreme to another.
-
-Kierkegaard elaborates further on boredom as emptiness. Concluding that boredom is not the absence of stimulation, but the absence of meaning. 
-
-Nowadays, this problem of overstimulation and simultaneous existential boredom can be valid more than ever. Furthermore, all activities no matter how often changed from one to another, will cease being captivating at some point. Eventually the boredom ‘avoidant’ personality will say: “I don’t feel like doing anything. I don’t feel like riding – the motion is too powerful; I don’t feel like walking – it is too tiring; I don’t feel like lying down, for either I have to stay down, and I don’t feel like doing that or I would have to get up again, and I don’t feel like doing that, either. Summa Summarum: I don’t feel like doing anything.” (Either/Or, p. 4)
-Although threatened by the imminent possibility of ending, this approach can be an attempt of experiencing a more meaningful life. 
-(World Heritage Encyclopedia. “Rotation Method”. Retrieved from http://worldebooklibrary.net)
+    <p class="h1">1.&emsp;INTRODUCTION</p><br><br>
+    <tr>
+        &emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
+        &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform
         <br>
     </tr>
-</div>  
+    </div> 
+
+<!--    <div class="images">-->
+    
+<div class="paragraph image"><div class="number">Fig. 1</div>
+    <img src="images/julius_koller.png"/>
+<div class="description">
+    <p>Koller, J. (1990). Pingpong (Pingpong Table with Panel) [Photograph]. Retrieved from http://www.artpool.hu/
+    </p>
+</div>
+</div>
+        
+<div class="paragraph image"><div class="number">2</div>
+    <img src="images/julius_koller_tennis.png">
+<div class="description">
+    <p>Koller, J. (n.d.). Aus der Serie “Anti Happening” (Tennis), 1963-71 [Photograph]. Retrieved from http://foundation.generali.at/
+    </p>
+</div>
+</div>
+    
+<div class="paragraph image"><div class="number">3</div>
+    <img src="images/health_track_grabowek.png">
+    <div class="description">
+    <p>Winiarski, B. (2015, March 24). ['health track' in a city of Grabowek] [Photograph]. Retrieved from http://terenzabudowany.blog.pl/
+    </p>
+</div>
+</div>
+    
+<div class="paragraph image"><div class="number">4</div>
+    <img src="images/john_baldessari_what_this_painting_aims_to_do.png">
+    <div class="description">
+   <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
+    </div>
+</div>
+    
+    <div class="paragraph image"><div class="number">5</div>
+    <img src="images/stanley_brouwn_this_way_brouwn_1963.jpg">
+    <div class="description">
+   <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
+    </div>
+</div>
+    
 
 
 <!--
@@ -260,6 +307,10 @@ Creating within a system of constrictions is always a necessity at some point of
     </tr>
 </div>
 -->
+    
+    
+    
+    
 
 </body>
 </html>
