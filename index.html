@@ -26,7 +26,7 @@
     <title>ALL WORK AND NO PLAY</title>
     <meta name="description" content="1. Think of how you would like to read. 2. Read following your choice of direction. 3. Follow the rules above." />
     <meta property="og:title" content="ALL WORK AND NO PLAY" />
-    <meta property="og:image" content="https://kabk.github.io/go-theses-17-magda-skibinska/julius_koller.png" />
+    <meta property="og:image" content="https://github.com/kabk/go-theses-17-magda-skibinska/julius_koller.png" />
     <meta property="dc:creator" content="Magda Skibinska" />
     
 <!--.widget drag-->
@@ -44,6 +44,12 @@
       $( function() {
 
         $('.paragraph').resizable({ grid: [ 40, 40 ] }).draggable({ grid: [ 40, 40 ], stop: updateMovements });
+          
+      });
+        
+         $( function() {
+
+        $('.image').resizable({ grid: [ 40, 40 ] }).draggable({ grid: [ 40, 40 ], stop: updateMovements });
           
       });
        
@@ -120,14 +126,15 @@ $(document).ready(function() {
     $('.paragraph').draggable({
    start: function(event, ui) { $(this).css("z-index", a++); }
 });
-    $('#dragZone div').click(function() {
+    $('.body').click(function() {
         $(this).addClass('top').removeClass('bottom');
         $(this).siblings().removeClass('top').addClass('bottom');
         $(this).css("z-index", a++);
 
     });
 });
-
+    
+  
 </script>
 
     
@@ -174,86 +181,131 @@ $(document).ready(function() {
 </ul>
 --->
    
-<!--
-<div class="paragraph" >
-    <p class="h1">0.&emsp;SOME TITLE</p><br>
-    <tr>
-        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text     
-        some text some textsome text some text some text some text some text some text some text some text some text  some text some text
-    </tr>
-</div>
+<div class="content"> 
     
--->
-<!--
-<div class="paragraph image">
-    <img src="images/julius_koller.png"/>
-    <div class="description">
-        <p>Description Description Description Description Description Description Description</p>
-    </div>
-</div>
-    
--->
-<!--
-<div class="paragraph" >
-    <p class="h1">0.&emsp;SOME TITLE</p><br>
-    <tr>
-        some text
-    </tr>
-</div>
-    
-<div class="paragraph" >
-    <p class="h1">0.&emsp;SOME TITLE</p><br>
-    <tr>
-        some text
-    </tr>
-</div>
-    
-<div class="paragraph" >
-    <p class="h1">0.&emsp;SOME TITLE</p><br>
-    <tr>
-        some text
-    </tr>
-</div>
--->
-    
-<!--
-<div class="paragraph" >
-    <p class="h1">0.&emsp;SOME TITLE</p><br>
-    <tr>
-        some text
-    </tr>
-</div>
--->
-    
-    
+   <div class="one">
 
 <div class="paragraph print">
     <p class="h1">0.&emsp;INSTRUCTIONS</p><br><br> 
     <tr>
         The platform can begin with instructions or a disclaimer that there is no instructions.
         <br>
-        &emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
-        &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform with oneself.(<span class="source">Marshall McLuhan</span>)<sub>1</sub><br>
+        &emsp;&emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
+        &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform with oneself.(<span class="source">Marshall McLuhan<sup>1</sup></span>)<br>
         &emsp;&emsp;The system serves a purpose of improvising a reading method where decisions have to be made fast in order to gather information. Like a system of alternative versions. On what parameters could the order of text change?<br>
         &emsp;&emsp;Should the new things be on top? Shorter paragraphs placed in groups can allow for more improvised way of reading.<br>     
-        &emsp;&emsp;All the text can be on top of each other. The viewer will be able to redistribute the content in order to make the reading rules according to his/her own choosing.<br><br><br>
-        <span class="footnote"><sub>1</sub> (04:34), ABC Radio National Network. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/</span>
+        &emsp;&emsp;All the text can be on top of each other. The viewer will be able to redistribute the content in order to make the reading rules according to his/her own choosing.<br><br>
+                <span class="footnote"><sup>1</sup> (04:34), ABC Radio National Network. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/<br>
+                <sup>2</sup>footnotefoot      notefoo tnotefootnote footnotefootnot efootnotefootnotefootnotefootno tefootnotefootnotef oot notef ootnotefootnote<br></span>
+        
      </tr>
 </div>
+   
      
 
-<div class="paragraph print">
+<div class="paragraph">
     <p class="h1">1.&emsp;INTRODUCTION</p><br><br>
     <tr>
         &emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
         &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform
         <br>
     </tr>
-    </div> 
-
-<!--    <div class="images">-->
+    </div>
     
-<div class="paragraph image print"><div class="number">Fig. 1</div>
+    
+<div class="paragraph" >
+    <p class="h1">0.&emsp;SOME TITLE</p><br><br>
+    <tr>
+        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text  <br>   
+        some text some textsome text some text some text some text some text some text some text some text some text  some text some text
+        <br>
+    </tr>
+</div>
+    
+    
+    <div class="paragraph" >
+    <p class="h1">0.&emsp;SOME TITLE 2</p><br><br>
+    <tr>
+        222some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text     
+        some text some textsome text some text some text some text some text some text some text some text some text  some text some textext some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text ext some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text 
+        <br>
+    </tr>
+</div>
+       </div> 
+    
+<div class="four">
+    <div class="paragraph">
+      <p class="h1">0.&emsp;ABSTRACT</p><br><br>
+    
+    <tr>
+It is way more important to look for what you do not know, rather than searching for what you already know. In order to do that, some undefined space at the starting point is necessary. I noticed that whenever I stop looking specifically for the answer to the question that I asked myself, I discover things that I would have never found otherwise. This random encounters with ideas and new discoveries, were in fact caused by not doing what was intended. 
+I had this question on my mind: how can we creatively profit from doing nothing? Is it possible to gain something from plain time-wasting? How is it possible that we find more when we do not look for it? Does it happen because when we do ‘nothing’ we are also less serious, because there is nothing to be concerned about? This problem is my research subject.
+
+I was concerned if there would be enough time to look for the answers. However, there was even more time required for determining what should be the question (and only after finding the answer I also did find the question). At some point of my research in the subject of play this question became the question that could be used for defining the starting point for my thesis. Can we profit from doing nothing as designers?
+
+I analyse in what ways does playfulness (as a possible contrary of seriousness) broaden the possibilities of creativity. How does the economy of time in the society that we live in, influences us? Is everything transformed into waiting? On the given examples I am showing how important is taking the time to ‘stop doing’.
+Eventually when faced with boredom we seek out for a solution to stop that feeling immediately. Boredom is unwelcome. However, it turns out that boredom has a value on its own, that we might find more fruitful than expected. 
+ 
+For the most part, I could not make my thesis if I was not playing. Through play I was able to construct a certain way of relating to information.
+
+In my thesis, the reader can make himself familiar with the instructions on how to proceed with the manner of reading. Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience, but instead he can explore the content according to his own rules. Through these means I am exploring the notion of playfulness in creating one’s own rules. In the end a platform for reading is like a platform for thought, and reading is fast guessing.1 Therefore reading can be interpreted as a game to perform with oneself. 
+Depending on the track you followed the result is different. 
+        
+    </tr>
+    </div>
+    </div>
+    
+<div class="three">
+    <div class="paragraph">
+    <p class="h1">0.&emsp;1C</p><br><br>
+    <tr>
+        three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three
+        <br>
+    </tr>
+    </div>
+    
+        <div class="paragraph">
+    <p class="h1">0.&emsp;2C</p><br><br>
+    <tr>
+       three thre ethree three three thre ethree three three thre ethree three ee three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethreeee three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethreeee three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethreeee three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree
+        <br>
+    </tr>
+        </div>
+</div>
+    
+    
+<div class="two">
+    
+    <div class="paragraph">
+    <p class="h1">0.&emsp;1B</p><br><br>
+    <tr>
+         two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two
+        <br>
+    </tr>
+    </div>
+    
+        <div class="paragraph">
+    <p class="h1">0.&emsp;2B</p><br><br>
+    <tr>
+         two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two
+        <br>
+    </tr>
+        </div>
+</div>
+
+    </div>
+    
+    
+        
+        
+    
+    
+
+
+<!--
+    <div class="images">
+    
+<div class="image"><tr><div class="number">Fig. 1</div>
     <img src="images/julius_koller.png"/>
 <div class="description">
     <p>Koller, J. (1990). Pingpong (Pingpong Table with Panel) [Photograph]. Retrieved from http://www.artpool.hu/
@@ -261,7 +313,7 @@ $(document).ready(function() {
 </div>
 </div>
         
-<div class="paragraph image print"><div class="number">2</div>
+<div class="image"><div class="number">2</div>
     <img src="images/julius_koller_tennis.png">
 <div class="description">
     <p>Koller, J. (n.d.). Aus der Serie “Anti Happening” (Tennis), 1963-71 [Photograph]. Retrieved from http://foundation.generali.at/
@@ -269,7 +321,7 @@ $(document).ready(function() {
 </div>
 </div>
     
-<div class="paragraph image"><div class="number">3</div>
+<div class="image"><div class="number">3</div>
     <img src="images/health_track_grabowek.png">
     <div class="description">
     <p>Winiarski, B. (2015, March 24). ['health track' in a city of Grabowek] [Photograph]. Retrieved from http://terenzabudowany.blog.pl/
@@ -290,6 +342,12 @@ $(document).ready(function() {
    <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
     </div>
 </div>
+-->
+    
+        
+ 
+    
+   
     
 
 
