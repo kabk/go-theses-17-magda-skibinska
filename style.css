@@ -1,14 +1,45 @@
 body {
     font-family: "Arial", sans-serif;
-    max-width: 2080px;
+/*    background: yellow;*/
     margin: 0px;
     padding: 0px;
 }
 
+#pasteboard {
+    background: blue;
+    left: 210mm;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    pointer-events: none;
+    box-shadow: 0 0px 10px 10px blue;
+    mix-blend-mode: multiply;
+}
+
+#map {
+    background: white;
+    width: 210mm;
+    height: 841mm;
+    border: 1px dashed grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
 
 p {
-    margin: 0;
+    margin: 0px;
     padding: 0px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non */
 }
 
 
@@ -20,17 +51,29 @@ p {
 
 
 header { 
-/*
     background: #fff;
     box-shadow: 0 0px 10px 10px white;
-*/
     height: 40px;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
-    z-index:10;
+    z-index: 9999999;
 }
+
+/*
+.top {
+    top:0px;
+    display: table;
+    color:#fff; 
+   position: absolute;
+    width: 100%;
+    height: 40px;
+    
+    overflow: auto;
+    z-index:1;
+}
+*/
 .nav-up {
     top: -60px; 
 }
@@ -74,20 +117,14 @@ sub {
     text-transform: uppercase;
       }
 
-#info {
-    
-    float:right;
-}
-
-
+/*
 li { display: block; }
 ul { display:block;
 position:absolute;
 font-family: inherit}
+*/
 
 /*. = class , # = id, .paragraph p */
-
-
 
 
 .top {z-index: 2; position: relative}
@@ -101,12 +138,6 @@ font-family: inherit}
     left:0px;
     z-index:2;
     padding:2px;
-}
-
-.images{
-    display:block;
-    margin-left:50vw;
-    
 }
 
 .image img { 
@@ -131,8 +162,7 @@ font-family: inherit}
     left:0px;
     background: #dddddd !important;
     font-size:10px;
-    line-height:10px;
-    
+    line-height:10px;   
   
 }
 
@@ -154,7 +184,9 @@ font-family: inherit}
 
 
 .paragraph {
-  
+    padding: 0 10px; 
+    box-sizing: border-box;
+/*    border: 1px solid black;*/
     display: table;
     color:#000; 
     font: 16px "Arial";
@@ -170,10 +202,10 @@ font-family: inherit}
    
 }
 
-.source{
+.source {
     font:10px "Arial";
-    
 }
+
 .footnote {
    position: relative;
     display: inline-block;
@@ -183,69 +215,69 @@ font-family: inherit}
    
 }
 
-
-.one{
-    margin-left:160px;
-     z-index:0;
+.layer {
+    position: absolute;
 }
 
-.two{
-   
-    top:500px;
+.one .two .three .four .five {
+    z-index:0;
+}
+
+/*nth of type = reversed*/
+
+.layer:nth-of-type(5){
+/*  This is layer one  */
+/*  Change ONLY top position here   */
+    top: 0px;
+}
+
+.layer:nth-of-type(4) {
+    top: 540px;
+}
+
+.layer:nth-of-type(3){
+    top: 540px;
+}
+
+.layer:nth-of-type(2){
+    top: 0px;
+}
+
+.layer:nth-of-type(1){
+    
+}
+
+.layer:nth-of-type(6){
+/*    IMAGE LAYER */
+    top: 40px;
+}
+
+.one {
+    margin-left:160px;   
+}
+
+.two {
     margin-left:120px;
-    position: absolute;
-    z-index:0;  
-   
-}
-.three{
-   
-    top:500px;
-    margin-left:80px;
-    position: absolute;
-    z-index:0;    
+    background: red;
 }
 
-.four{
-    
-    top:0px;
-    margin-left:40px;
-    position: absolute;
-    z-index:0;  
-    
+.three {
+    margin-left: 80px;
+    background: blue;
+}
+
+.four {
+    margin-left:  40px;
+    background: green;
+}
+
+.image {
+    margin-left: 680px;
 }
 
 .paragraph tr {
     display: table-row;
 }
-
-.one .paragraph:nth-of-type(1) {
-    background: #dbdbdb;
-    
-}
-.two .paragraph:nth-of-type(1) {
-    background: #636363;  
-}
-
-.two .paragraph:nth-of-type(2) {
-    background: #636363;
-
-}
-
-.paragraph:nth-of-type(2) {
-    background: #1434ea;
-
-}
-
-
-/*images*/
-.paragraph:nth-of-type(3) {
-    background: #dbdbdb;
-  
-
-}
-
-.paragraph:nth-of-type(4) {
-   background: #dbdbdb;
    
 
 }
@@ -276,6 +308,19 @@ font-family: inherit}
 
 }
 
+#sort {
+    position: fixed;
+    top: 50px;
+    right: 90px;
+    z-index: 999;
+}
+
+#movements {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    z-index: 9999;
+}
 
 
 .a {
@@ -284,11 +329,18 @@ font-family: inherit}
 }
 
 @media print {
-    body{ 
-        width:100%;
-        margin:0px;
-        page-break-inside: avoid;
-        
+    
+    @page {
+        size: 210mm 841mm; 
+        margin: 0;
+    }
+    
+    body {
+/*        zoom: 150%;*/
+    }
+    
+    #pasteboard {
+        display: none;
     }
     
    .no-print, .no-print *
@@ -307,11 +359,9 @@ font-family: inherit}
         float:right;
     }
 
-    .paragraph {
-       margin-left:0cm;
-        
+    .layer {
+        left: 0;
     }
-    
 
 
 }
