@@ -16,6 +16,7 @@ body {
     pointer-events: none;
     box-shadow: 0 0px 10px 10px blue;
     mix-blend-mode: multiply;
+    background-blend-mode: multiply;
 }
 
 #map {
