@@ -2,12 +2,12 @@ body {
     font-family: "Arial", sans-serif;
 /*    background: yellow;*/
     margin: 0px;
-    padding: 0px;
+    padding-top: 40px;
     background:white;
 }
 
 #pasteboard {
-    background: blue;
+    background-color: darksalmon;
     left: 210mm;
     top: 0;
     position: fixed;
@@ -16,8 +16,7 @@ body {
     z-index: 99999;
     pointer-events: none;
     box-shadow: 0 0px 10px 10px blue;
-    mix-blend-mode: multiply;
-    
+    mix-blend-mode: multiply;    
 }
 
 #map {
@@ -32,7 +31,6 @@ body {
     padding: 0;
 }
 
-
 p {
     margin: 0px;
     padding: 0px;
@@ -46,25 +44,24 @@ p {
 
 a {
     color: #000;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 
 a:hover {
+
     text-decoration: underline;
+    text-decoration-color: black;
 }
-
-
 
 .ui-draggable, .ui-droppable {
     background-position: top;
     display:block;
 }
 
-
 header { 
     background: #fff;
-    box-shadow: 0 0px 10px 10px white;
+    box-shadow:  0 0px 10px 10px white;
+    mix-blend-mode: none;
     height: 35px;
     position: fixed;
     top: 0;
@@ -72,7 +69,6 @@ header {
     width: 100%;
     z-index: 999999;
 }
-
 
 #title{
     top:0px;
@@ -97,17 +93,52 @@ header {
     text-transform: uppercase;
       }
 
-
 .nav-up {
-    top: -60px; 
+    top: -40px; 
 }
 
-/*
-sub { 
-    vertical-align: text-top;
-    font-size: 10px;
+#sort{
+    position: absolute;
+    top:0px;
+    margin:0 auto;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    
 }
-*/
+
+#sort :hover{
+    cursor: pointer;
+    
+}
+ #sortone, #sorttwo, #sortthree, #sortfour, #sortfive {
+
+    position:relative;
+    margin: 0 0px 0 0px;
+    display:inline;
+    z-index: 999999;
+    border: none;
+    background: none;
+    font-size: 14px ;
+    font-family: "Times", serif;
+    text-transform: uppercase; 
+    padding:10px 0 0 0px;
+}
+#sortone, #sorttwo, #sortthree, #sortfour, #sortfive:focus {
+    outline: none;
+    background: none;
+    border: white;
+}
+
+
+
+#movements {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 9999999;
+}
+
 sup{
   vertical-align: baseline;
   position: relative;
@@ -126,19 +157,15 @@ sub {
     line-height:20px;
    
     z-index:2;
-   
 }
 
-
-
 /*. = class , # = id, .paragraph p */
-
 
 .top {z-index: 2; position: relative}
 .bottom {z-index: 1; position: relative}
 
 .number{
-    font-size:24px;
+    font-size:16px;
     position:absolute;
     display: block;
     top:0px;
@@ -150,16 +177,16 @@ sub {
 .image img { 
     width: 100%;
     height: auto;
-    opacity: 0.9;
+    opacity: 0.6;
  background:none;
    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-      
 }
 
 .image img:hover {
      -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
+    opacity: 0.9;
 }
 
 .image .description{
@@ -169,10 +196,9 @@ sub {
     left:0px;
     background: #dddddd !important;
     font-size:10px;
-    line-height:10px;   
-  
+    line-height:10px; 
+    
 }
-
 
 .image {
    
@@ -182,13 +208,15 @@ sub {
     line-height: 24px;
     width: 480px;
     min-width:140px;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
     background-color: #cec9c9;
     overflow: auto;
 /*    top: 0;*/
 /*    left: 0;*/
-    z-index:0;
+    z-index:1;
+    
 }
-
 
 .paragraph {
     padding: 0 10px; 
@@ -235,23 +263,23 @@ sub {
 .layer:nth-of-type(5){
 /*  This is layer one  */
 /*  Change ONLY top position here   */
-    top: 0px;
+    top: 40px;
 }
 
 .layer:nth-of-type(4) {
-    top: 540px;
+    top: 580px;
 }
 
 .layer:nth-of-type(3){
-    top: 540px;
+    top: 580px;
 }
 
 .layer:nth-of-type(2){
-    top: 0px;
+    top: 40px;
 }
 
 .layer:nth-of-type(1){
-    
+    top: 40px;
 }
 
 .layer:nth-of-type(6){
@@ -265,17 +293,17 @@ sub {
 
 .two {
     margin-left:120px;
-    background: red;
+    background: #a8a8a8;
 }
 
 .three {
     margin-left: 80px;
-    background: blue;
+    background: #848484;
 }
 
 .four {
     margin-left:  40px;
-    background: green;
+    background: #565656;
 }
 
 .image {
@@ -286,55 +314,7 @@ sub {
     display: table-row;
 }
    
-
-}
-
-/*.paragraph:nth-of-type(5) {
-    position: absolute;
-    top:500px;
-   background: #727272;
-    margin-left: 5%;
-    z-index:0;
-
-}
-*/
-.paragraph:nth-of-type(6) {
-    top:160px;
-    right:160px;
-    position: absolute;
-    background: none;
-    mix-blend-mode: multiply;
-
-}
-.paragraph:nth-of-type(7) {
-    top:200px;
-    right:200px;
-    position: absolute;
-    background: none;
-    mix-blend-mode: multiply;
-
-}
-
-#sort {
-    position: fixed;
-    top: 50px;
-    right: 90px;
-    z-index: 999;
-}
-
-#movements {
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    z-index: 9999999;
-}
-
-
-.a {
-    color: black;
-    text-decoration: underline;
-}
-
+/*PRINT*/
 @media print {
     
     @page {

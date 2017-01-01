@@ -11,25 +11,25 @@
   <link rel="stylesheet" type="text/css" href="style.css"> 
     
 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
            
 <!--touch -->
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
-    <script src="jquery.ui.touch-punch.min.js"></script> 
+<script src="jquery.ui.touch-punch.min.js"></script> 
 
     
-    <title>ALL WORK AND NO PLAY</title>
+    <title>All work and no play</title>
     <meta name="description" content="1. Think of how you would like to read. 2. Read following your choice of direction. 3. Follow the rules above." />
     <meta property="og:title" content="ALL WORK AND NO PLAY" />
     <meta property="og:image" content="https://kabk.github.io/go-theses-17-magda-skibinska/images/julius_koller.png" />
     <meta property="dc:creator" content="Magda Skibinska" />
     
-<!--.widget drag-->
+<!--.MOVEMENTS COUNTER-->
     <script>
         var movements = 0;
         var updateMovements = function() {
@@ -39,58 +39,58 @@
         }
     </script>
     
-<!--.paragraph drag & scale-->
+<!--.PARAGRAPH DRAG AND SCALE, COUNT MOVEMENTS-->
     <script>        
         
-      $( function() {
+        $( function() {
 
         $('.paragraph, .image').resizable({ grid: [ 40, 40 ] }).draggable({ grid: [ 40, 40 ], stop: updateMovements });
-          
-      });
+
+        });
        
     </script>
- 
 
+<!--    HEADER SCROLL ANIMATION-->
+    <!--   DOESNT WORK PROPERLY BECAUSE THE HEIGHT IS UNKNOWN -->
+<!--
     <script>
    
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('header').outerHeight();
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
 
-    $(window).scroll(function(event){
-        didScroll = true;
-    });
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
         }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        if (st > lastScrollTop && st > navbarHeight){
+
+            $('header').removeClass('nav-down').addClass('nav-up');
+        } else {
+
+            if(st + $(window).height() < $(document).height()) {
+                $('header').removeClass('nav-up').addClass('nav-down');
+            }
+        }
+
+        lastScrollTop = st;
     }
-    
-    lastScrollTop = st;
-}
     </script>
+-->
 
 
 <script>
@@ -102,6 +102,8 @@ $(document).ready(function() {
 //        start: function(event, ui) { $(this).css("z-index", a++); }
 //    });
     
+/////MOVE TO TOP ON CLICK
+    
     $('.paragraph, .image').on('mousedown', function() {
 //        console.log($(this).attr('class'));
 //        console.log('old z-index: ' + $(this).css( "z-index" ) );
@@ -111,35 +113,72 @@ $(document).ready(function() {
 
     });
     
-    $('#sort').on('click', function(){
-        $('.one').removeClass('bottom').addClass('top');
-        $('.one').css("z-index", a++);
+/////SORT LAYERS
+    
+    $('#sortone').on('click', function(){
+    $('.one').removeClass('bottom').addClass('top');
+    $('.one').css("z-index", a++);
     })
+    $('#sorttwo').on('click', function(){
+    $('.two').removeClass('bottom').addClass('top');
+    $('.two').css("z-index", a++);
+    })
+    $('#sortthree').on('click', function(){
+    $('.three').removeClass('bottom').addClass('top');
+    $('.three').css("z-index", a++);
+    })
+    $('#sortfour').on('click', function(){
+        $('.four').removeClass('bottom').addClass('top');
+        $('.four').css("z-index", a++);
+    })
+    $('#sortfive').on('click', function(){
+    $('.five').removeClass('bottom').addClass('top');
+    $('.five').css("z-index", a++);
+    })
+    
+    
     
 });
     
   
 </script>
 
-    
-
 </head>
-   
+    
     
 <body>
     
-<header class="nav-down">
 
+<header class="nav-down .no-print">
+    
     <p id="title">
         All work and no play
+    </p>  
+    
+<!--
+    <p id="layers">
+        SORT LAYER:
     </p>
+-->
+    
     <p id="info">
         Magda Skibinska
     </p>
+    
+    
+    <div id="sort">
+       
+        <button id="sortone">1 –</button>
+        <button id="sorttwo">2 –</button>
+        <button id="sortthree">3 –</button>
+        <button id="sortfour">4 –</button>
+        <button id="sortfive">5 </button>
+    </div> 
+    
     <div id="movements"></div>
+ 
 </header>
-   
-<button id="sort">Sort layer one</button>
+
 
 <div id="pasteboard"></div>
     
@@ -171,7 +210,9 @@ $(document).ready(function() {
          </tr>
         </div>
 
-    </div>    
+    </div>
+    
+    
     
     
 <!--    LAYER FOUR-->
@@ -201,59 +242,6 @@ $(document).ready(function() {
 
 
 
-        <div class="paragraph four">
-        <p class="h1">0.&emsp;REFERENCES</p><br><br>
-        <tr>  
-
-        10.	REFERENCES
-    Print
-    Caillois, R. (1961). Man, play and games. Champaign, Illinois: University of Illinois Press.
-    Evans, D. (Ed.). (2013). The Art of Walking: A Field Guide. London: Black Dog Publishing.
-    Gielen, P. & Van Heusden, B. (Eds.). (2015). Arts Education Beyond Art, Teaching Art in Times of Change. Amsterdam: Valiz
-    Gretzinger, K. (Ed.). (2012). A Manner of Reading Design. Berlin: Sternberg Press.
-    Hara, K. (2010). Designing Design. In K. Hara (Ed.), Exformation (pp. 370-407). Zurich: Lars Müller Publishers.
-    Huizinga, J. (1949). Homo Ludens. London, Boston and Henley: Routlege & Kegan Paul Ltd. 
-    Kollarova D., & Van Lingen, A. (2016). Seventeen Playgrounds. Eindhoven: Lecturis.
-    Kierkgaard, S. (1992). Either/Or: A Fragment of Life. New York: Penguin Group.
-    Lefaivre, L., De Roode, I. & Fuchs R. (Eds.). (2002). Aldo van Eyck, the playgrounds and the city. Amsterdam: Stedelijk Museum, 2002.
-    McCullough, M. (1999). Discovery in Digital Craft. In J. Abrams (Ed.), If/Then (pp. 132-139). Amsterdam: BIS Publishers.
-    McLuhan, M. & Fiore, Q. (2008). The Medium is the Massage. London: Penguin Books.
-    Mevis, A. & Van Deursen, L. (2005). Recollected Work, Amsterdam, Netherlands: Artimo.
-    Noë, A. (2016). Strange Tools: Art and Human Nature. New York, United States: Hill and Wang.
-    Redzepi, R. (2013). A Work in Progress. London. England: Phaidon Press Limited.
-    Russell, B. (2004). In praise of idleness and other essays. London: Routledge.
-    Solnit, R. (2000). Wanderlust: a history of walking. New York, USA: Penguin Group.
-    Sueda, J. (Ed.). (2015). Statement and Counter-Statement, Notes on Experimental Jetset. Amsterdam, Netherlands: Roma Publications.
-    Suter, B. (2009). Parallel Encyclopedia. Amsterdam, Netherlands: Roma Publications. 
-    Verwoert, J. (2007). Towards a Different Economy of Time. In J. Morgan, & J. Verwoert (Eds.), Roman Ondak (pp. 81-95). Köln, Germany: Walther König. 
-
-    Online media
-    Audio Guide Stop For John Baldessari, What This Painting Aims To Do [Audioguide]. (2010). Retrieved from http://whitney.org/
-    (...)http://bauhaus100.de/
-    (...)http://www.metamodernism.com/
-    Henri Matisse: The Cut-Outs. (2014). Retrieved from https://www.moma.org/interactives/exhibitions/2014/matisse/
-    Herriman, K. (2016, September 7). An Iconic Graphic Designer on His Process. Retrieved from http://www.nytimes.com/
-    Malpas, Jeff. “Hans-Georg Gadamer”. The Stanford Encyclopedia of Philosophy (Winter 2016 Edition). Edward N. Zalta (Ed.). http://plato.stanford.edu/
-    WHO. (2011). “Physical Activity”. Retrieved from http://www.who.int/
-    World Heritage Encyclopedia. “Rotation Method”. 
-    Retrieved from http://worldebooklibrary.net/
-
-    Films
-    ABC Radio National Network. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/
-    Brooks, L., J. & Greenhut, R. (Producers) & Marshall, P. (Director). (1988). Big [Motion Picture]. USA: Twentieth Century Fox. 
-    Deschamps, Thompson, E. (Producer) & Deschamps, P. (Director). (2015). Noma, my perfect storm [Motion Picture]. Denmark: Documentree Films. 
-    Noë, A. (2015, October 09). Strange Tools: Art and Human Nature [Video file]. Retrieved from https://www.youtube.com/
-    Sagmeister, S. (2009, July). The Power of Time Off [Video file]. Retrieved from https://www.ted.com/
-
-    Online dictionaries
-    http://dictionary.com/
-    http://wikipedia.org/
-    http://merriam-webster.com/
-
-
-                  <br>
-            </tr>
-            </div>
       </div>
     
 <!--   LAYER THREE-->
@@ -349,47 +337,46 @@ $(document).ready(function() {
     
     
 
-<div class="layer">
-    
-<div class="image"><tr><div class="number">Fig. 1</div>
-    <img src="images/julius_koller.png"/>
-<div class="description">
-    <p>Koller, J. (1990). Pingpong (Pingpong Table with Panel) [Photograph]. Retrieved from http://www.artpool.hu/
-    </p>
-</div>
-</div>
+    <div class="layer">
         
-<div class="image"><div class="number">2</div>
-    <img src="images/julius_koller_tennis.png">
-<div class="description">
-    <p>Koller, J. (n.d.). Aus der Serie “Anti Happening” (Tennis), 1963-71 [Photograph]. Retrieved from http://foundation.generali.at/
-    </p>
-</div>
-</div>
-    
-<div class="image"><div class="number">3</div>
-    <img src="images/health_track_grabowek.png">
-    <div class="description">
-    <p>Winiarski, B. (2015, March 24). ['health track' in a city of Grabowek] [Photograph]. Retrieved from http://terenzabudowany.blog.pl/
-    </p>
-</div>
-</div>
-    
-<div class="image"><div class="number">4</div>
-    <img src="images/john_baldessari_what_this_painting_aims_to_do.png">
-    <div class="description">
-   <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
+        <div class="image"><tr><div class="number">Fig. 1</div>
+            <img src="images/julius_koller.png"/>
+                <div class="description">
+                    <p>Koller, J. (1990). Pingpong (Pingpong Table with Panel) [Photograph]. Retrieved from http://www.artpool.hu/
+                    </p>
+                </div>
+        </div>
+
+        <div class="image"><div class="number">Fig. 2</div>
+            <img src="images/julius_koller_tennis.png">
+                <div class="description">
+                    <p>Koller, J. (n.d.). Aus der Serie “Anti Happening” (Tennis), 1963-71 [Photograph]. Retrieved from http://foundation.generali.at/
+                    </p>
+                </div>
+        </div>
+
+        <div class="image"><div class="number">Fig. 3</div>
+            <img src="images/health_track_grabowek.png">
+                    <div class="description">
+                    <p>Winiarski, B. (2015, March 24). ['health track' in a city of Grabowek] [Photograph]. Retrieved from http://terenzabudowany.blog.pl/
+                    </p>
+                </div>
+        </div>
+
+        <div class="image"><div class="number">Fig. 4</div>
+            <img src="images/john_baldessari_what_this_painting_aims_to_do.png">
+                    <div class="description">
+                   <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
+                    </div>
+        </div>
+
+        <div class="image"><div class="number">Fig. 5</div>
+            <img src="images/stanley_brouwn_this_way_brouwn_1963.jpg">
+                    <div class="description">
+                   <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
+                    </div>
+        </div>
     </div>
-</div>
-    
-    <div class="image"><div class="number">5</div>
-    <img src="images/stanley_brouwn_this_way_brouwn_1963.jpg">
-    <div class="description">
-   <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
-    </div>
-</div>
-    
-</div>
 
     
 </div>
