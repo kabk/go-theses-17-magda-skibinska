@@ -18,8 +18,8 @@
 
            
 <!--touch -->
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
 <script src="jquery.ui.touch-punch.min.js"></script> 
 
     
@@ -97,7 +97,32 @@
 $(document).ready(function() {
     
     var a = 3;
-    
+    var positions = {};
+
+
+    function fixJump (el) {
+
+        /* This function gathers all the positions the divs
+        are positioned at */
+        $(el).each(function(index){
+            positions[index] = $(this).position().top;
+        });
+
+        /* This function takes those original positions and 
+        transforms each div into an absolutely positioned
+        div, this prevents jumping  */
+        $(el).each(function(index){
+            console.log(index + ' : ' + positions[index]);
+            $(this).css({
+                'position' : 'absolute',
+                'top' : positions[index]
+            })
+        });
+    }
+
+    fixJump('.paragraph');
+    fixJump('.image');
+
 //    $('.paragraph').draggable({
 //        start: function(event, ui) { $(this).css("z-index", a++); }
 //    });
@@ -135,9 +160,6 @@ $(document).ready(function() {
     $('.five').removeClass('bottom').addClass('top');
     $('.five').css("z-index", a++);
     })
-    
-    
-    
 });
     
   
