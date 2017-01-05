@@ -7,7 +7,7 @@ body {
 }
 
 #pasteboard {
-    background-color: darksalmon;
+    background-color: darkkhaki;
     left: 210mm;
     top: 0;
     position: fixed;
@@ -298,12 +298,12 @@ sub {
 
 .three {
     margin-left: 80px;
-    background: #848484;
+    background: #8f8f8f;
 }
 
 .four {
     margin-left:  40px;
-    background: #565656;
+    background: #757575;
 }
 
 .image {
@@ -320,7 +320,7 @@ sub {
 @media print {
     
     @page {
-        size: 210mm 841mm; 
+        size: 210mm 297mm; 
         margin: 0;
     }
     
