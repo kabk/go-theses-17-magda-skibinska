@@ -1,3 +1,11 @@
+/*
+FIX:
+    print scale box
+    header appear on scroll
+    movements div visible only in print
+    header not visible in print
+*/
+
 body {
     font-family: "Arial", sans-serif;
 /*    background: yellow;*/
@@ -7,7 +15,7 @@ body {
 }
 
 #pasteboard {
-    background-color: darkkhaki;
+    background-color: #c3bd78;
     left: 210mm;
     top: 0;
     position: fixed;
@@ -15,7 +23,7 @@ body {
     height: 100%;
     z-index: 99999;
     pointer-events: none;
-    box-shadow: 0 0px 10px 10px blue;
+    box-shadow: 0 0px 10px 10px #0000b9;
     mix-blend-mode: multiply;    
 }
 
@@ -36,10 +44,10 @@ p {
     padding: 0px;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
-     -khtml-user-select: none; /* Konqueror */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non */
 }
 
 a {
@@ -97,6 +105,11 @@ header {
     top: -40px; 
 }
 
+#movements {
+/*    display:none;*/
+    font-size:14;
+}
+
 #sort{
     position: absolute;
     top:0px;
@@ -111,7 +124,7 @@ header {
     cursor: pointer;
     
 }
- #sortone, #sorttwo, #sortthree, #sortfour, #sortfive {
+ #sortzero, #sortone, #sorttwo, #sortthree, #sortfour, #sortfive {
 
     position:relative;
     margin: 0 0px 0 0px;
@@ -124,7 +137,7 @@ header {
     text-transform: uppercase; 
     padding:10px 0 0 0px;
 }
-#sortone, #sorttwo, #sortthree, #sortfour, #sortfive:focus {
+#sortzero, #sortone, #sorttwo, #sortthree, #sortfour, #sortfive:focus {
     outline: none;
     background: none;
     border: white;
@@ -135,17 +148,16 @@ header {
 #movements {
     position: absolute;
     top: 0px;
-    right: 10px;
+    bottom: 10px;
     z-index: 9999999;
 }
 
-sup{
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
-}
-sub { 
-  top: 0.4em; 
+sup {
+    vertical-align: baseline;
+    line-height:0px;
+    position: relative;
+    top: -0.5em;
+    font-size: 10px;
 }
 
 .h1 {
@@ -153,9 +165,9 @@ sub {
     display: inline-block;    
     position: absolute;
     font-family: "Arial";
-    font-size: 18px;
+    font-size: 16px;
     line-height:20px;
-   
+    top: 0.2em;
     z-index:2;
 }
 
@@ -168,25 +180,29 @@ sub {
     font-size:16px;
     position:absolute;
     display: block;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left:2px;
     z-index:2;
     padding:2px;
+    
 }
 
 .image img { 
     width: 100%;
     height: auto;
-    opacity: 0.6;
- background:none;
+    opacity: 0.7;
+    background:transparent;
    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
+    mix-blend-mode: multiply;
+
 }
 
 .image img:hover {
      -webkit-filter: grayscale(0%); 
     filter: grayscale(0%);
     opacity: 0.9;
+    
 }
 
 .image .description{
@@ -195,6 +211,7 @@ sub {
     bottom: 2px;
     left:0px;
     background: #dddddd !important;
+    opacity:1;
     font-size:10px;
     line-height:10px; 
     
@@ -208,12 +225,7 @@ sub {
     line-height: 24px;
     width: 480px;
     min-width:140px;
-    mix-blend-mode: multiply;
-    opacity: 0.9;
-    background-color: #cec9c9;
     overflow: auto;
-/*    top: 0;*/
-/*    left: 0;*/
     z-index:1;
     
 }
@@ -247,18 +259,25 @@ sub {
     font:10px "Arial";
     line-height: 12px !important;
    margin-top:-10px;
+    text-align: left;
    
 }
+
+
 
 .layer {
     position: absolute;
 }
 
-.one .two .three .four .five {
+.zero .one .two .three .four .five {
     z-index:0;
 }
 
 /*nth of type = reversed*/
+
+.layer:nth-of-type(6){
+    top: 40px;
+}
 
 .layer:nth-of-type(5){
 /*  This is layer one  */
@@ -267,7 +286,7 @@ sub {
 }
 
 .layer:nth-of-type(4) {
-    top: 580px;
+    top: 40px;
 }
 
 .layer:nth-of-type(3){
@@ -282,14 +301,21 @@ sub {
     top: 40px;
 }
 
-.layer:nth-of-type(6){
+
+.layer:nth-of-type(7){
 /*    IMAGE LAYER */
     top: 40px;
+}
+
+.zero {
+    margin-left:200px;
+    background: #dddddd;
 }
 
 .one {
     margin-left:160px;   
 }
+
 
 .two {
     margin-left:120px;
@@ -319,23 +345,28 @@ sub {
 /*PRINT*/
 @media print {
     
+    .hidden-print {
+    display: none !important;
+    }
+    
     @page {
-        size: 210mm 297mm; 
+        size: 210mm 841mm; 
         margin: 0;
     }
     
     body {
-/*        zoom: 150%;*/
+        zoom: 145%;
     }
     
     #pasteboard {
         display: none;
     }
     
-   .no-print, .no-print *
-    {
-        display: none !important;
-    }
+    #movements {
+    display:block;
+}
+    
+   
      
   /*  #header #title #nav-up{
         position:fixed;
@@ -343,10 +374,15 @@ sub {
         
     }*/
        
+    .image img {
+    -webkit-filter: initial;
+    filter: initial;
+}
+    
     .image {
-        max-width:400px;
         float:right;
     }
+    
 
     .layer {
         left: 0;

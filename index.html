@@ -142,7 +142,10 @@ $(document).ready(function() {
     });
     
 /////SORT LAYERS
-    
+    $('#sortzero').on('click', function(){
+    $('.zero').removeClass('bottom').addClass('top');
+    $('.zero').css("z-index", a++);
+    })
     $('#sortone').on('click', function(){
     $('.one').removeClass('bottom').addClass('top');
     $('.one').css("z-index", a++);
@@ -174,7 +177,7 @@ $(document).ready(function() {
 <body>
     
 
-<header class="nav-down .no-print">
+<header class="nav-down">
     
     <p id="title">
         All work and no play
@@ -190,15 +193,18 @@ $(document).ready(function() {
         Magda Skibinska
     </p>
     
+     <div class="hidden-print">
+        <div id="sort">
+            
+            <button id="sortzero">0 –</button>
+            <button id="sortone">1 –</button>
+            <button id="sorttwo">2 –</button>
+            <button id="sortthree">3 –</button>
+            <button id="sortfour">4 –</button>
+            <button id="sortfive">5 </button>
+        </div> 
+    </div>
     
-    <div id="sort">
-       
-        <button id="sortone">1 –</button>
-        <button id="sorttwo">2 –</button>
-        <button id="sortthree">3 –</button>
-        <button id="sortfour">4 –</button>
-        <button id="sortfive">5 </button>
-    </div> 
     
     <div id="movements"></div>
  
@@ -215,17 +221,19 @@ $(document).ready(function() {
     
     <div class="layer">  
         <div class="paragraph five">
-        <p class="h1">0.&emsp;COLOPHON</p><br><br>
+        <p class="h1">10.&emsp;COLOPHON</p><br><br>
         <tr>               
         &emsp;&emsp;WRITTEN AND DESIGNED BY<br>
         &emsp;&emsp;Magda Skibinska<br>
         &emsp;&emsp;<a href="mailto:info@magdaskibinska.com">info@magdaskibinska.com</a><br>
         &emsp;&emsp;<a href=http://magdaskibinska.com target="_blank">www.magdaskibinska.com</a><br><br> 
-<!--        &emsp;&emsp;Edited by Sean Rowlands<br><br> -->
+        &emsp;&emsp;EDITED BY<br>
+        &emsp;&emsp;Sean Rowlands
+        <br><br>
         &emsp;&emsp;SPECIAL THANKS TO<br>
         &emsp;&emsp;Dirk Vis<br>
-        &emsp;&emsp;Sean Rowlands<br>
         &emsp;&emsp;Manus Nijhoff<br>
+        &emsp;&emsp;Sean Rowlands<br>
         &emsp;&emsp;Rory van Wingerden<br>
         &emsp;&emsp;Jan van der Kleijn<br><br>
 
@@ -246,20 +254,60 @@ $(document).ready(function() {
     <div class="layer">
         <div class="paragraph four">
           <p class="h1">0.&emsp;ABSTRACT</p><br><br>
+            <tr>
+            &emsp;&emsp;It is way more important to look for what you do not know, rather than searching for what you already know. In order to do that, some undefined space at the starting point is necessary. I noticed that whenever I stop looking specifically for the answer to the question that I asked myself, I would discover things that I would have never found otherwise. These random encounters with ideas and new discoveries, were in fact caused by not doing what was intended. 
+            I had this question on my mind: how can we creatively profit from doing nothing? Is it possible to gain something from plain time-wasting? How is it possible that we find more when we do not look for it? Does it happen because when we do ‘nothing’ we are also less serious, because there is nothing to be concerned about? This problem is my research subject.<br>
+            &emsp;&emsp;I was concerned if there would be enough time to look for the answers. However, there was even more time required for determining what should be the question (and upon finding the answer I also found the question). At some point of my research into the subject of play this question became the question that could be used for defining the starting point for my thesis. Can we profit from doing nothing as designers?<br>
+            &emsp;&emsp;I analyse playfulness (as a possible contrary of seriousness) and the ways it can broaden the possibilities of creativity. How does the economy of time in the society that we live in influence us? Is everything transformed into waiting? On the given examples I show how important it is to take the time to ‘stop doing’.
+            When faced with boredom we seek out for a solution to stop that feeling immediately. Boredom is unwelcome. However, it turns out that boredom has a value of its own, that we might find more fruitful than expected.<br>
+            &emsp;&emsp;For the most part, I could not make my thesis if I was not playing. Through play I was able to construct a certain way of relating to information.<br>
+            &emsp;&emsp;In my thesis, the reader can make himself familiar with the instructions on how to proceed with the manner of reading. Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience, but instead he can explore the content according to his own engagement with the rules. Through these means I am exploring the notion of playfulness in creating one’s own rules. In the end a platform for reading is like a platform for thought, and reading is fast guessing<sup>1</sup>.<br>
+            &emsp;&emsp;Therefore reading can be interpreted as a game to perform with oneself. Depending on the track you followed the result is different. <br><br>
+                
+            <span class="footnote">1.&emsp;&emsp;McLuhan, M. [ABC Radio National Network]. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/<br>
+            </tr>
+        </div>
+        
+    <div class="paragraph four">
+          <p class="h1">8.&emsp;CONCLUSION</p><br><br>
 
         <tr>
-    It is way more important to look for what you do not know, rather than searching for what you already know. In order to do that, some undefined space at the starting point is necessary. I noticed that whenever I stop looking specifically for the answer to the question that I asked myself, I discover things that I would have never found otherwise. This random encounters with ideas and new discoveries, were in fact caused by not doing what was intended. 
-    I had this question on my mind: how can we creatively profit from doing nothing? Is it possible to gain something from plain time-wasting? How is it possible that we find more when we do not look for it? Does it happen because when we do ‘nothing’ we are also less serious, because there is nothing to be concerned about? This problem is my research subject.
+              As we become dependent on machines through our seated-at-the-desk work, we should reach out for a counter-action. Recreation time can be beneficial as a physical activity, for research and a time when one can commit to the exploration of a new field of work. Can freedom create rules?
+            Doing nothing as opposed to planned and rule driven work environment can serve as time dedicated for self-improvement. Play and improvisation become a laboratory for new ways of thinking. Therefore, we should unlearn our urge to occupy ourselves with tasks constantly and instead learn to waste more time.
 
-    I was concerned if there would be enough time to look for the answers. However, there was even more time required for determining what should be the question (and only after finding the answer I also did find the question). At some point of my research in the subject of play this question became the question that could be used for defining the starting point for my thesis. Can we profit from doing nothing as designers?
+            Game is a creative act that allows for reinterpretation of reality, and expands the possibilities of what can be done. We can profit from that experience when we bring it back to the real world. 
 
-    I analyse in what ways does playfulness (as a possible contrary of seriousness) broaden the possibilities of creativity. How does the economy of time in the society that we live in, influences us? Is everything transformed into waiting? On the given examples I am showing how important is taking the time to ‘stop doing’.
-    Eventually when faced with boredom we seek out for a solution to stop that feeling immediately. Boredom is unwelcome. However, it turns out that boredom has a value on its own, that we might find more fruitful than expected. 
+            Play offers an opportunity of a parallel perception where our actions have less or no consequences. Engaging in the rules of a game opens new possibilities that are not available inthe ‘regular’ reality. Similar occurrences happen through the modus of an art happening. During the year 2016, there was a monthly announcement on the Stedelijk (Museum Amsterdam) website stating that a performance by Tino Seghal is taking place in the gallery. The viewer would wander around the space looking for this event, questioning all the encountered situations. Is this the performance or just a regular happening? 
 
-    For the most part, I could not make my thesis if I was not playing. Through play I was able to construct a certain way of relating to information.
+            It can be said, that if there was only the announcement about the art performance without the action itself happening, that this could stand on its own as an artwork. Even if it means the artist did nothing and the viewer did not look at anything in particular. Assuming that some people knew about the performance taking place but didn’t find it they still participated in the game. This social engagement in questioning the rules of “normality” applies as well to the visitors that did not know about the artwork being displayed. Time and time again the experience would be different, as well as the location so in order to witness the whole variety of possibilities a visitor had to spend time on his part to experience the happening. 
 
-    In my thesis, the reader can make himself familiar with the instructions on how to proceed with the manner of reading. Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience, but instead he can explore the content according to his own rules. Through these means I am exploring the notion of playfulness in creating one’s own rules. In the end a platform for reading is like a platform for thought, and reading is fast guessing.1 Therefore reading can be interpreted as a game to perform with oneself. 
-    Depending on the track you followed the result is different. 
+            The revealing of things is, in fact, always dependent upon other things being simultaneously concealed (in much the same way as seeing something in one way depends on not seeing it in another). Truth is thus understood as the unconcealment that allows things to appear, and that also makes possible the truth and falsity of individual statements, and yet which arises on the basis of the ongoing play between unconcealment and concealment—a play that, for the most part, remains itself hidden and is never capable of complete elucidation. In the language Heidegger employs in ‘The Origin of the Work of Art’, the unconcealment of ‘world’ is thereby grounded in the concealment of ‘earth’. It is this sense of truth as the emergence of things into unconcealment that occurs on the basis of the play between concealing and unconcealing that is taken by Heidegger as the essence (or ‘origin’) of the work of art. 
+
+        </tr>
+        </div>
+        
+    <div class="paragraph four">
+        <p class="h1">9.&emsp;REFERENCES</p><br><br>
+        <tr>
+            PRINTED MEDIA<br>
+            <u>Caillois, R.</u> (1961). <i>Man, play and games.</i> Champaign, Illinois: University of Illinois Press.<br>
+            <u>Gielen, P. & Van Heusden, B.</u> (Eds.). (2015). <i>Arts Education Beyond Art, Teaching Art in Times of Change.</i> Amsterdam: Valiz<br>
+            <u>Hara, K.</u> (2010). <i>Designing Design.</i> In K. Hara (Ed.), Exformation (pp. 370-407). Zurich: Lars Müller Publishers.<br>
+            <u>Huizinga, J.</u> (1949). <i>Homo Ludens.</i> London, Boston and Henley: Routlege & Kegan Paul Ltd. <br>
+            <u>Kollarova D., & Van Lingen, A.</u> (2016). <i>Seventeen Playgrounds.</i> Eindhoven: Lecturis.<br>
+            <u>Kierkgaard, S.</u> (1992). <i>Either/Or: A Fragment of Life.</i> New York: Penguin Group.<br>
+            <u>Lefaivre, L., De Roode, I. & Fuchs R.</u> (Eds.). (2002). <i>Aldo van Eyck, the playgrounds and the city.</i> Amsterdam: Stedelijk Museum, 2002.
+            <u>McLuhan, M. & Fiore, Q.</u> (2008). <i>The Medium is the Massage.</i> London: Penguin Books.<br>
+            <u>Mevis, A. & Van Deursen, L.</u> (2005). <i>Recollected Work.</i> Amsterdam, Netherlands: Artimo.<br>
+            <u>Noë, A.</u> (2016). <i>Strange Tools: Art and Human Nature.</i> New York, United States: Hill and Wang.<br>
+            <u>Redzepi, R.</u> (2013). <i>A Work in Progress—Noma Recipes, Journal.</i> London. England: Phaidon Press Limited.<br>
+            <u>Russell, B.</u> (2004). <i>In praise of idleness and other essays.</i> London: Routledge.<br>
+            <u>Solnit, R.</u> (2000). <i>Wanderlust: a history of walking.</i> New York, USA: Penguin Group.<br>
+            <u>Sueda, J.</u> (Ed.). (2015). <i>Statement and Counter-Statement, Notes on Experimental Jetset.</i> Amsterdam, Netherlands: Roma Publications.<br>
+            <u>Suter, B.</u> (2009). <i>Parallel Encyclopedia.</i> Amsterdam, Netherlands: Roma Publications.<br> 
+            <u>Verwoert, J.</u> (2007). <i>Towards a Different Economy of Time.</i> In J. Morgan, & J. Verwoert (Eds.), Roman Ondak (pp. 81-95). Köln, Germany: Walther König.<br> 
+            <br>IMAGES<br>
+            blbl
 
         </tr>
         </div>
@@ -271,150 +319,567 @@ $(document).ready(function() {
       </div>
     
 <!--   LAYER THREE-->
-    
     <div class="layer">
         <div class="paragraph three">
-        <p class="h1">1C.&emsp;1C</p><br><br>
+        <p class="h1">1.&emsp;</p><br><br>
         <tr>
-            three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three
-            <br>
+            <i>All play presupposes the temporary acceptance, if not of an illusion (indeed this last word means nothing less than beginning a game: inlusio), then at least of a closed, conventional, and, in certain respects, imaginary universe. Play can consist not only of deploying actions or submitting to one's fate in an imaginary milieu, but of becoming an illusory character oneself, and of so behaving. One is thus confronted with a diverse series of manifestations, the common element of which is that the subject makes believe or makes others believe that he is someone other than himself. He forgets, disguises, or temporarily sheds his personality in order to feign another. I prefer to designate these phenomena by the term mimicry, (...) mimetism.</i> <br><br>
+
+            <span class="footnote">Caillois, R. (1961). Man, play and games. Champaign, Illinois: University of Illinois Press.</span>
+            
+          
+        </tr>
+        </div>
+    
+        <div class="paragraph three">
+       <p class="h1">2.&emsp;DISCOVERY IN CHANGING THE ENVIRONMENT</p><br><br>
+            <tr>
+            &emsp;&emsp;There exists a game in which we have to imagine the world upside down—lying on the floor and looking at the ceiling as if it was the floor. The floor becomes pristine, the thresholds have to be stepped over, the doorknobs are too high and the lights stick out from the floor. A game like this becomes a self-created tool that frees the initiator from usual preconceptions of the order of things. Such time spent doing nothing can play a significant role in progress, after all. In fact we need time to search for the new.  It is increasingly difficult to not do anything in a society where time is money (and money rules the world). <br>
+
+            &emsp;&emsp;Who does not need a good walk once in a while to gather their thoughts. Such recreation time can also serve a purpose of enhancing the creative work. Fieldwork might have to be done ‘in a field’, as a new undiscovered place. Discovery is bounded with the need for documentation. In other words, it is a process of research. Accordingly, documentation is discovery or re-discovery. Both have equal potential to be ‘new’. Exploration does not necessarily have to be a leisure activity considered opposite to the constrained, miserable work time. <br>
+
+            &emsp;&emsp;Every seven years, the New York based graphic design firm Sagmeister&Walsh (Stefan Sagmeister and Jessica Walsh) closes their studio completely. They can not be reached in any way and the information on their website informs anyone interested to visit again in twelve months. The ‘year-off’ spent on exploration of the area the studio’s founders duo travels to, greatly influences their approach when they eventually return to the studio. In brief, such temporary breaks from the monotonous work flow guarantees a rise in productive creativity, and most of all happiness.<br> 
+
+             <span class="footnote">
+                 Sagmeister, S. (2009, July). The Power of Time Off [Video file]. Retrieved from https://www.ted.com/
+            </span><br>
+          
         </tr>
         </div>
 
         <div class="paragraph three">
-        <p class="h1">2C.&emsp;2C</p><br><br>
+        <p class="h1">3.&emsp;</p><br><br>
         <tr>
-           three thre ethree three three thre ethree three three thre ethree three ee three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethreeee three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethreeee three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethreeee three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree three three thre ethree
-            <br>
+            &emsp;&emsp;Children fuelled by their imagination, they stretch the boundaries of what is seemingly logical in order to create a solution. In many cases that is a solution to the problem of being bored. Undoubtedly, we keep on getting bored as adults as well, possibly with more ‘dreadful’ consequences. Although, it is certainly considered a waste of time to ‘do nothing’, somehow watching television is not so much ‘doing nothing’ anymore. Provided that, if we follow McLuhan and assume that Kierkegaard would also agree, we can observe the absence of meaning in a task performed to avoid boredom, it might follow that this leads to an even worse state of real existential boredom. After all, what could be better than sitting in front of television after a day full of waiting, sitting in a train, sitting on a bike, sitting in a tram and sitting at a desk.<br> 
+
+            &emsp;&emsp;Time has only one direction. Currently this direction is moving with increasing speed, closer to us. ‘Time is money’ one could say. And ‘money is success’, another could add. However, we might also find ourselves in a state of despair when lost facing some conceptual artwork. Ruminating in our mind for long minutes trying to find an answer about the ‘why and what’ of the witnessed artwork. American philosopher Alva Noë (Professor of Philosophy at the University of California, Berkeley) argues that the disorganized value of boredom encourages us to step out of the way we look at something. It is a pause in our thinking-looking which lets us witness a change in our perception of this matter. This happens to adults faced with an artwork, he argues. This transition from not seeing to seeing or seeing differently might occur when we are literally bored.<br>
         </tr>
         </div>
+        
+         <div class="paragraph three">
+        <p class="h1">4.&emsp;</p><br><br>
+        <tr>
+            &emsp;&emsp;John Baldessari’s in-figurative paintings often contain only short, surprisingly plain messages. These how-to paintings, such as What this painting aims to do (1967) contradictorily calls out for breaking the rules of composition while actually following them. Then, to complicate this paradox even further, the resulting composition is at the same time (according to the artist) not following the rules that can be found in the teaching books<sup>1</sup>. Works of art are strange tools, after all. That is, they are tools we can’t use, they are useless. They are texts with no practical content, or pictures that don’t show us anything in particular. And so they require us to stop doing<sup>2</sup>.<br><br>
+            
+
+            <i>JOHN BALDESSARI: (...) I mean, you can follow all kind of rules, and they’re probably all right, but it doesn’t mean you’re going to come up with anything that we can call art.
+
+            NARRATOR: Baldessari’s paintings point out the absurdity of prevailing aesthetic attitudes. He follows the painting’s advice to “break all the so-called rules of composition,” which, ironically, actually means following the rules. And in another twist, by following the rules, Baldessari has also broken them—since these results certainly aren’t what the teaching manuals are calling for.
+            </i><br><br>
+            
+            <span class = "footnote">
+                1.&emsp;&emsp;Audio Guide Stop For John Baldessari, What This Painting Aims To Do [Audioguide]. (2010). Retrieved from http://whitney.org/)
+                2.&emsp;&emsp;Noë, A. (2015, October 09). Strange Tools: Art and Human Nature [Video file]. Retrieved from https://www.youtube.com/
+            </span>
+        </tr>
+        </div>
+        
     </div>
     
 <!--    LAYER TWO -->
     
     <div class="layer">
         <div class="paragraph two">
-        <p class="h1">1B.&emsp;1B</p><br><br>
+        <p class="h1">2.&emsp;TAKE THE TIME TO READ</p><br><br>
         <tr>
-             two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two
-            <br>
-        </tr>
-        </div>
+            &emsp;&emsp;Can we learn to do nothing? Or rather, should the question be, do we have to unlearn to fill in every minute of our time with an empty activity? Being occupied with doing nothing might seem easer than it is in the production-oriented culture. Nowadays, a general belief exists that doing nothing is something wrong. However, the doors for thinking ‘outside of the box’ remain closed without play, whether it is questioning the known rules or re-defining them. Thus, a good way to practice doing nothing is to disguise it as something else, and the activity closest to doing nothing is the walking. In her book Rebecca Solnit explains how a desk is no place to think on a large scale (Solnit, R. (2000). Wanderlust: a history of walking. New York, USA: Penguin Group, 4.). Because the story is mainly about taking the time to do nothing and how we can profit from it, the best I can do to convey this message, is to advise you to immediately stop reading, leave and take a walk.<br> 
 
-        <div class="paragraph two">
-        <p class="h1">2B.&emsp;2B</p><br><br>
-        <tr>
-             two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two two two two two two two two  two two two two two two two two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two  two two two two two two two two two two two two two two two two two two two two two
-            <br>
+            &emsp;&emsp;Walking as a type activity involves only the body labour and the outcome of it are merely thoughts and ideas. Just as Julius Koller refers to table tennis tournament as conversation, Solnit points out how during walking the entity of our being is finally brought together in a metaphorical conversation.<br>
+
+            &emsp;&emsp;Thinking is generally regarded as doing nothing, as there is no way to prove to the ‘outside’ that a person is ‘working’, if that only regards thinking. Otherwise graphic designer’s time necessary for creating ideas at the beginning of the assignment (by the client) would be regarded as the period of a highest importance of the whole design process. Without enough time spent on thinking there would be no idea ever made. Sometime however, this takes more time than intended. The result is waiting. This type of waiting for things to happen is without a doubt not regarded as a welcomed occurrence in our society.<br> 
+
+            &emsp;&emsp;However, because every moment of time is filled in with an activity it means that when a person is engaged with one task, he is already anticipating another at hand. It might mean, in fact that we live in a society in which everything is transformed into waiting.<br> 
+
+            &emsp;&emsp;How society lets the time pass for those who live in it, which determines how society is perceived as reality. As a matter of fact, we have to take the time to read and the time to walk because <i>as you get older, life gets organized around projects and plans and needs and goals, and the result of this congealing of activity is that time speeds up. (...) Our days are over, one might almost say, before they have begun, for we have already defined the present moment in relation to what is yet to happen, in relation to the purpose, point, or plan. (‘What did you do yesterday?’ ‘I went to work.’)</i><br><br>
+            <span class="footnote">Noë, A. (2015, October 09). Strange Tools: Art and Human Nature [Video file]. Retrieved from https://www.youtube.com/)</span>
+
         </tr>
         </div>
+        
+        <div class="paragraph two">
+        <p class="h1">3.&emsp;STAGNATION</p><br><br>
+        <tr>
+        &emsp;&emsp;Waiting, sitting in a train, sitting on a bike, sitting in a tram, sitting at a desk. The desk is a graphic designer’s saviour and oppressor. It certainly does not require any numbers to prove that an average graphic designer spends a lot of time with no one else as company, except his own reflection in the computer screen. Just as this routine has consequences on the design from the craft point of view, it is equally interesting to focus on the more physical aspect of this problem. This extremely static routine has, without doubt, some impact on our creativity and satisfaction gained during the work time. The amount of web content regarding the subject, is a good illustration of how common this seated problem is. To put it short, evolution did not include long hours of straining our bodies at right angles. Extensive on-line guidance advises how to stretch, bend and do head rotations, even unnoticeably. Further analysis of this matter might actually be superfluous, since most probably, you, reading this text are doing nothing else but sitting in front of a computer.<br> 
+
+        &emsp;&emsp;Yet, how does this limitation influence us, not only from our mind’s, but also from the body’s point of view? By searching on the internet for everything regarding ‘sitting in front of a computer’ the outcome is a vast amount of content, that bring several recurring subjects to attention. Those regarding high risk of severe back pains, are within the least life-threatening. According to the WHO “ physical inactivity (lack of physical activity) has been identified as the fourth leading risk factor for global mortality (6% of deaths globally).” (WHO. (2011). “Physical Activity”. Retrieved from http://www.who.int/). Although, It is generally acknowledged that we all need to perform some exercise, we can further read that physical activity should not be mistaken with exercise. Unlike exercise, activity is unplanned, random, and free of any structure.<br> 
+
+        &emsp;&emsp;Another immense number of results relates to optimizing your workspace to make the best out of the unfavourable circumstances of extended sitting. Increasing physical activity is a concern for the whole society. It requires multi-disciplinary and omnipresent approach, because it is not just a personal problem. Institutions like schools, are great examples of places where we should think about designing the spaces where many are working everyday.<br> 
+
+        &emsp;&emsp;A study published in the March 26th issue of the Archives of Internal Medicine found that in a sample of 200,000 people, there was a clear relation between the act of sitting and all-cause mortality. Based on the research it was visible that sitting over eleven hours a day results in a 40 percent higher chance of dying from any cause at all.Therefore, not only is it necessary to increase activity, it should primarily be a significant reduction of the sitting time.<br><br>
+            <span class="footnote"> Van der Ploeg, H. P. (2012, March 26). Sitting Time and All-Cause Mortality Risk in 222 497 Australian Adults [Article]. Retrieved from http://jamanetwork.com/journals/jamainternalmedicine/ </span>
+ 
+
+        </tr>
+        </div>
+        
+         <div class="paragraph two">
+        <p class="h1">4.&emsp;</p><br><br>
+        <tr>
+        &emsp;&emsp;As much as the static work-style is characteristic for the current times, during the period of Bauhaus in Dessau, physical activity used to be incorporated into the school’s curriculum. The static, mind absorbing everyday routine at the school, was believed to be effectively counter-balanced by sport. It is worth mentioning that Bauhaus students were long past their childhood years.<br> 
+
+        &emsp;&emsp;In the summer semester of 1928 a female teacher, Karla Grosch<sup>1</sup> was assigned to give gymnastics classes to the female students. Respectively, there was also a male practitioner in the school’s staff, responsible for the good shape of the male students. Grosch was born in Weimar in 1904. Before joining the Bauhaus, she graduated as a dancer from the famous Gret Palucca dance course in Dresden.  As a young woman she also played a main role in different stage performances –as in Oskar Schlemmer’s ‘Glass dance’ and ‘Metal dance’, which both premiered in Berlin in 1929. Schlemmer, had in fact, apart from art-schools, spent some semesters, studying graphic design at a marquetry workshop in Stuttgart from 1903 to 1905. The dances that he designed were an art-unifying, interdisciplinary performances, in which the dancers were turned into ‘artificial figures’.<br><br>
+        
+            <span class="footnote">Karla Grosch. (n.d.). Retrieved from https://www.bauhaus100.de/</span>
+         </tr>
+        </div>
+        
     </div>
     
 <!--    LAYER ONE-->
     
     <div class="layer">
         <div class="paragraph one">
-            <p class="h1">0.&emsp;INSTRUCTIONS</p><br><br> 
-            <tr>
-                The platform can begin with instructions or a disclaimer that there is no instructions.
-                <br>
-                &emsp;&emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
-                &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform with oneself.(<span class="source">Marshall McLuhan<sup>1</sup></span>)<br>
-                &emsp;&emsp;The system serves a purpose of improvising a reading method where decisions have to be made fast in order to gather information. Like a system of alternative versions. On what parameters could the order of text change?<br>
-                &emsp;&emsp;Should the new things be on top? Shorter paragraphs placed in groups can allow for more improvised way of reading.<br>     
-                &emsp;&emsp;All the text can be on top of each other. The viewer will be able to redistribute the content in order to make the reading rules according to his/her own choosing.<br><br><br>
-                        <span class="footnote"><sup>1</sup> (04:34), ABC Radio National Network. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/<br>
-                        <sup>2</sup>footnotefoot      notefoo tnotefootnote footnotefootnot efootnotefootnotefootnotefootno tefootnotefootnotef oot notef ootnotefootnote<br></span>
+            <p class="h1">1.&emsp;STARTING POINT</p><br><br>
+            <tr>  
+            &emsp;&emsp;Instead of wandering outside, we might be forced to just wander in our minds instead. How does society let the time pass for us? Is everything transformed into waiting? Is a designer trapped in increasingly accelerating work dynamics? If so, should we consider a form of counter-action to the constant ‘waiting for a new assignment, for a new answer and for a new contract’ routine?<br> 
 
-             </tr>
+            &emsp;&emsp;It is increasingly difficult to do nothing, as we are faced towards the rush ‘on-hold’. The most common answer to the question: “What did you do yesterday”? might be “I went to work”. In order to avoid being trapped in such a mindset, being able to take time off and play in an alternate (self-created) version of reality is a necessary tool. <br>
+
+            &emsp;&emsp;What could the creative value of playing games be? Improvised rules created in a free-time, ‘playground’ conditions, serve as an exercise in expanding one’s creative potential. Those self-driven constrictions offer possibilities for systematic work as a graphic designer. But, how can we explore this potential in the work environment?<br>
+
+            &emsp;&emsp;How fast or slow time passes while we wait for things to happen defines the nature of the society that we live in. <br>
+
+            &emsp;&emsp;Is it becoming more difficult to not do anything? <br>
+            </tr>
         </div>
-
-
+        
         <div class="paragraph one">
-            <p class="h1">1.&emsp;INTRODUCTION</p><br><br>
+        <p class="h1">2.&emsp;GETTING BORDED</p><br><br>
             <tr>
-                &emsp;&emsp;Replacing introduction with instructions may offer possibility for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he/she can explore the content according to his own rules. <br>
-                &emsp;&emsp;Platform for reading is like a platform for thought, a book can be seen as a different platform for reading than a website, so are they also platforms of different thoughts? Because reading is fast guessing, reading can be interpreted as a game to perform
+            &emsp;&emsp;There exists a saying that intelligent people do not get bored. I did hear that sentence often, when I was a child.  Which sometimes made me feel like should not have allowed myself to get to such a point of boredom. On the contrary, hearing that sometimes made me feel like I should not have allowed myself to feel bored in the first place. This saying is most often said by parents when they lack the time to amuse their children. But not doing anything can be defined otherwise than just as boredom. The general tendency, when we start getting bored, is to feel the urge to get creative in order to escape the feeling of a lack of purpose.<br> 
+
+            &emsp;&emsp;Not only is the intelligence about the possession of the knowledge, but also about inventiveness. The ability to create an engaging task (or a game) for oneself, when there is nothing else to do, saves a creative mind from boredom. This can be described as taking the time for mind-wandering to eventually come up with new ideas. Similar exercise in taking time for exploring the body and mind, was part of the modernist vision for education that resulted in Bauhaus going down in history as one of the most relevant creative environments. [ Fig. iiten ]<br> 
+
+            &emsp;&emsp;On the other hand, one might also say that high intelligence requires constant supply of stimuli, and boredom is in such case, is the least welcome experience. Because an active mind needs a continual change in order to be satisfied, with only one task to do, it is most likely to get bored relatively fast. The solution to such problem, was subject of Søren Kierkegaard ‘rotation method’. He elaborated on this problem in the 1843 work <i>Either/Or: A Fragment of Life.</i> Following the line of argumentation of this Danish philosopher, in order to avoid boredom, a constant shifting between tasks is necessary. In this manner, if Karel Martens makes one layer of one print every day, he would suffer perpetual misery waiting for his single print to dry each time. Instead, we can assume he has more prints that he in turn works on. In the given example, that method alone should provide the artist with a constant satisfaction from his work. For everyone else, the result of such approach would theoretically be, the certainty that everyone can be provided with more-less everlasting satisfaction derived from their actions. Without a doubt, a high level of proficiency in creativity is necessary for such scattered inventiveness.<br> 
+
+                &emsp;&emsp;The individual seeking for such kind of satisfactory life is referred to as an aesthete (a person who professes a special or superior appreciation of what is beautiful, from Greek <i>aisthētḗs</i>)<sup>1</sup>. <br><br>
+            
+                <span class="footnote">
+                    1.&emsp;&emsp;Oxford English Dictionary. “Aesthete”. Retrieved from http://www.oed.com/
+                </span><br>
+            </tr>
+        </div>
+        
+        <div class="paragraph one">
+            <tr>
+            <br><br>
+          
+            <i>I – I hardly know, sir, just at present – at least I know who I was when I got up this morning, but I think I must have been changed several times since then</i><sup>1</sup>.<br><br>
+
+                <span class="footnote">
+                    1.&emsp;&emsp;McLuhan, M. & Fiore, Q. (2008). The Medium is the Massage. London: Penguin Books,154</span>
                 <br>
             </tr>
         </div>
+        
+        <div class="paragraph one">
+            <tr><br><br>
+            &emsp;&emsp;As the land should be left fallow for certain amount of time in order to remain fertile, not doing anything at all can be profitable. Nonetheless, the aesthete should be constantly switching from one task to another, and continue to change himself constantly. This anti-boredom (or possibly anti-burn out) method can be applied as a hedonistic tool in gaining satisfaction from the ‘aesthetic’ way of life. However, this repetitive search for novel, ultimately leads to a state of despair. As a result, the aesthete (the creative mind) might face the impossibility of commitment to one thing – since commitment requires repetition of one activity.<br> 
 
+           &emsp;&emsp; Kierkegaard elaborates further on boredom as emptiness. Concluding, that boredom is not the absence of stimulation, but the absence of meaning. Furthermore, all activities no matter how often changed from one to another, will cease being captivating at some point. Eventually the boredom ‘avoidant’ person will say: “I don’t feel like doing anything. I don’t feel like riding – the motion is too powerful; I don’t feel like walking – it is too tiring; I don’t feel like lying down, for either I have to stay down, and I don’t feel like doing that or I would have to get up again, and I don’t feel like doing that, either. Summa Summarum: I don’t feel like doing anything.” (Kierkgaard, S. (1992). Either/Or: A Fragment of Life. New York: Penguin Group, 4.) Although threatened by the imminent possibility of ending, this approach could be an attempt to experience a more meaningful life. <br>
+             <span class="footnote">
+                 World Heritage Encyclopedia. “Rotation Method”. Retrieved from http://worldebooklibrary.net/)
+            </span><br>
 
-        <div class="paragraph one" >
-            <p class="h1">0.&emsp;SOME TITLE</p><br><br>
-            <tr>
-                some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text  <br>   
-                some text some textsome text some text some text some text some text some text some text some text some text  some text some text
+            &emsp;&emsp;Nowadays, the problem of overstimulation along with simultaneous existential boredom is valid more than ever. As a result, we might 
+            find ourselves looking for quality boredom that could improve our 
+            life, while at the same time ‘bored to death’ by repetitive, limiting tasks at work.<br>	
+
+            <br>
+        </tr>
+        </div>
+        
+         <div class="paragraph one">
+
+            &emsp;&emsp;Nowadays, the problem of overstimulation along with simultaneous existential boredom is valid more than ever. As a result, we might 
+            find ourselves looking for quality boredom that could improve our 
+            life, while at the same time ‘bored to death’ by repetitive, limiting tasks at work.<br>	
+
+            <br>
+        </tr>
+        </div>
+    
+          <div class="paragraph one">
+            <p class="h1">3.&emsp;DO YOU SEE WHAT YOU WALK PAST EVERY DAY?</p><br><br>
+            <tr> 
+
+            René Redzepi is a Danish chef of Hungarian origin, and co-owner of the two Michelin-starred restaurant Noma in Copenhagen. His restaurant was awarded as the best restaurant in the world three times consecutively from 2010 to 2012, and then again in 2014. 
+            His idea was to reinvent Nordic cuisine through what can be characterized by locality, re-definition and clean taste. In his journal (published in 2011) he explores the thread that connects the kitchen’s best ideas. He analyses what are the shifts and discoveries of creativity: how does the space influence us, is everything 
+            intuition and if real creativity happens when we play or only in the moments of despair.
+
+            At the Noma premises in Copenhagen’s harbour area, there are periods of not-doing usual work — which can be devoted to anything from picking up grass in the field to burning tree bark. The 60 members of staff, not just the chefs, are encouraged at these times to look for new ingredients. (Deschamps, Thompson, E. (Producer) & Deschamps, P. (Director). (2015). Noma, my perfect storm [Motion Picture]. Denmark: Documentree Films. ) Despite the extremely demanding work routine, all the staff members are welcome to create their own dish proposals and develop their own ideas independently. During Saturday’s late evenings everyone meet to (literally) taste each other’s ideas. Unlike other chefs Redzepi encourages everyone to save their ideas for themselves, for their own development as culinary creatives. Despite the almost ever lasting cold Scandinavia weather, unforgiving for an plant that happens to sprout too early, the entire concept of the restaurant is based on the idea of locality. So walks to work and biking through the woods, result in new discoveries that enrich the palette of this cutting-edge kitchen. In a way, this is an approach that celebrates time, which applies to other aspects of the kitchen like the re-discovery of existing ingredients by putting them through different methods such as fermentation. The essential thought behind this approach, having patience and celebrating time. Not to mention the restaurant’s leitmotif—the ‘here and now in time and place’. Redzepi says that “as a cook you are creating a language, we need an alphabet to build sentences, the ingredients are our alphabet. And the more letters we have, the more beautiful the prose”. (Redzepi, R. (2013). A Work in Progress – Journal. London. England: Phaidon Press Limited, 37.) Time is an ingredient, enriching the creative tools and making space for discoveries. These tools allow for re-exploring the world anew.
+
+            Such rediscovery of the already known surroundings can happen when one dedicates time for it. However obvious it might sound, a lot of commitment is necessary if one wants to find something new. In the spring of 2004 a Swedish forager contacted the restaurant. It turned out that while people in this region of Scandinavia had been importing walnuts for decades, similar or even better ingredients were just ten minutes outside of Copenhagen. (ibid., 41.) Not only tastes mimicking the so far imported ingredients were found, but also new marvels in always-present in this area trees, grasses and mosses. An old Swedish army survival book provided background information about the multitude of available edibles. This seemingly redundant book was a revelation on how little was noticed, when passing by it every day. Such shift in the way of seeing resulted in questioning everything and rethinking the approach to food.
+
+            The given example illustrates how a strong identity can be created by taking a step back (and around) instead of only moving forward. For Noma this moment of realisation of the richness of their surroundings was a keystone in creating their distinct identity. In other words, the recipe for a rediscovery is sometimes lost or forgotten knowledge that needs to be reconstructed. The next step is made by walking around and collecting the lost pieces. Eventually they can be put together in an entirely new way.
+
+                <br><br>
+
+                <span class="footnote">
+                    1.&emsp;&emsp;McLuhan, M. & Fiore, Q. (2008). The Medium is the Massage. London: Penguin Books,154</span>
                 <br>
             </tr>
         </div>
-
-
-        <div class="paragraph one" >
-            <p class="h1">0.&emsp;SOME TITLE 2</p><br><br>
+    
+        <div class="paragraph one">
+        <p class="h1">4.&emsp;HOW CAN I GET FROM HERE TO THERE?</p><br><br>
             <tr>
-                222some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text some text     
-                some text some textsome text some text some text some text some text some text some text some text some text  some text some textext some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text ext some text some text  some text some text        some text some textsome text some text some text some text some text some text some text some text some text  some text 
-                <br>
+            &emsp;&emsp;When walking in a hurry you are stopped by a random passer-by on the street. Relying on your knowledge, he asks you how to get somewhere. Upon giving an answer you question yourself—is this (for sure) the way to get there? The passer-by walks away with the description that you provided. You are then left wondering if you were right or wrong.<br>
+ 
+            &emsp;&emsp;Such random situation has been the object of interest of Stanley Brouwn. In This way Brouwn (1964), he asked random passers-by on the street of Amsterdam to show him the way to a certain place “b”—like the Dam Platz. (Stanley Brouwn, This way Brouwn, 1960 [Audioguide]. Retrieved from http://www.moma.org/) The time necessary to walk from his position “a” to “b” has been compressed in the explanation of the person he asked. The experience of space for every person is different and so the instruction and resulting drawing varied each time. These maps lacking in the street names, show a tendency for simplified and straightened visualisation based on a memory. These guides when compared with each other, provide an example of how different each one’s way of looking is. As they were drawing the people talked, and at times they talked more that they drew. On the sketches we can see what the people were explaining. But we cannot see what they have omitted, because they had trouble realizing that what might be clear to them still requires explanation.
+           
+            <br> 
+
+                &emsp;&emsp;The individual seeking for such kind of satisfactory life is referred to as an aesthete (a person who professes a special or superior appreciation of what is beautiful, from Greek <i>aisthētḗs</i>)<sup>1</sup>. <br><br>
+            
+                <span class="footnote">
+                    1.&emsp;&emsp;Brouwn, S. (1961). <i>This way Brouwn, 25-2-61.26-2-61.</i> New York: Verlag Gebr. König Köln.
+                </span>
             </tr>
         </div>
+    
+    
+        
+        
     </div>
+
+
+       
     
+<!-- LAYER ZERO-->  
     
-<!--
-    
-    <div class="layer">
+   <div class="layer">  
         <div class="paragraph zero">
-            <p class="h1">0.&emsp;SOME TITLE 2</p><br><br>
-            <tr>
-            Drag to move
+            <p class="h1">0.&emsp;TABLE OF CONTENTS</p><br><br>
+            <tr>  
+                &emsp;&emsp;Can we creatively profit from doing nothing?<br>
+                &emsp;&emsp;(research question)<br><br>
+                The order of the chapters is not static. Rather, it depends on the choice of the viewer. He decides which reading path and which reading order he wishes to follow. The beginning and the end are determined. The reader is invited to make his own rules. An example of an order is to follow the paragraph numbers or to follow the columns of text.<br>
+<!--            <br>
+                INSTRUCTIONS<br> 
+                TAKE THE TIME TO READ<br> 
+                GETTING BORED<br> 
+                STAGNATION<br> 
+                DISCOVERY IN CHANGING THE ENVIRONMENT<br> 
+                INTERRUPT THE ACTIVITY YOU ARE DOING AT THIS MOMENT<br> 
+                A SOUND MIND IN A SOUND BODY<br> 
+                DO YOU ALWAYS HAVE TO PLAY WITH EVERYTHING?<br> 
+                CONCLUSION<br>
+                REFERENCES<br>
+                COLOPHON<br>
+-->
             </tr>
         </div>
-    </div>
--->
+    
+
+    
+        <div class="paragraph zero">
+            <p class="h1">0.&emsp;INSTRUCTIONS</p><br><br>
+            <tr>  
+                The platform can begin with instructions or a disclaimer that there is no instructions.<br>
+                &emsp;&emsp;Replacing introduction with instructions may offer possibility the for more engaging reading experience, because the reader is not preconditioned about what he is going to experience but instead he can explore the content according to his own rules.<br> 
+                &emsp;&emsp;A platform for reading is like a platform for thought, a book can be seen as a different platform for reading from a webpage, so are they also platforms of different thoughts? Because reading is fast guessing<sup>1</sup>, reading can be interpreted as a game to perform with oneself.<br>
+                &emsp;&emsp;The system serves for improvising a reading method where decisions have to be made fast in order to gather information. Like a system of alternative versions.<br>
+                &emsp;&emsp;On what parameters could the order of text change? Should new things be on top? Shorter paragraphs placed in groups can allow for more improvised way of reading.<br>
+                &emsp;&emsp;All the text can be on top of each other. The viewer will be able to redistribute the content in order to make the reading rules according to his/her own choosing.<br><br>
+                
+                <span class="footnote">1.&emsp;&emsp;McLuhan, M. [ABC Radio National Network]. (1979, June 27). The Medium Is The Message [Video file]. Retrieved from https://www.sam-network.org/<br>
+            </tr>
+        </div>
+   </div>
             
     
-    
+<!-- IMAGES -->      
 
     <div class="layer">
+           <div class="image"><tr><div class="number">Fig. 1</div>
+            <img src="images/richard_long_tent_peru.png"/>
+                <div class="description">
+                    <p>Photograph of Richard Long in an unknown location during the execution of one of his field works. Photo from Studio International May, 1971.<br>
+
+                    <i>Richard Long camping on a field</i> [Photograph]. (2007, August 02). Retrieved from http://www.studiointernational.com/
+                    </p>
+                </div>
+        </div>
         
+        <div class="image"><tr><div class="number">Fig. 2</div>
+            <img src="images/richard_long_a-line-made-by-walking-1967.png"/>
+                <div class="description">
+                    <p>Long, R. (1967). <i>A Line made by walking, England</i> [Photograph]. Retrieved from: http://www.richardlong.org/
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 3</div>
+            <img src="images/richard_long_circle.png"/>
+                <div class="description">
+                    <p>Long, R. (1972). <i>Walking a line in Peru</i> [Photograph]. Retrieved from: http://www.richardlong.org/
+                    </p>
+                </div>
+        </div>
+        
+          <div class="image"><tr><div class="number">Fig. 1</div>
+            <img src="images/students_of_johannes_itten_and_georg_muche%20.png"/>
+                <div class="description">
+                    <p>Morning exercises on the roof of the Itten College in Berlin (students of Johanes Itten) in 1931, similar body awarness routine was execuded ealier in Bauhaus in Weimar, during the 20’s, when Itten’s philosophy as a master of the school was applied on all the levels of the curriculum. The radically-styled Itten, who sported a shaven head and crimson robes, was a follower of Mazdaznan. Concerned with the nature of thought, emotion and behavior, Mazdaznan taught that the practical aspects of personal health could be achieved through conscious breathing. The word Mazdaznan is said to derive from the Persian <i>Mazda</i> and <i>Znan</i>, and is supposed to mean 'master thought'.<br>
+
+                    Helguera, P. (2009, November 25). <i>Bauhaus Lab: The Secret Ingredient?</i> Retrieved from https://www.moma.org/
+                    </p>
+                </div>
+        </div>
+        
+          <div class="image"><div class="number">Fig. 2</div>
+            <img src="images/julius_koller_tennis.png">
+                <div class="description">
+                    <p>Koller, J. (1978). <i>Universal Futurological Question Mark</i> [Photograph]. Retrieved from http://www.martinjanda.at/
+                    </p>
+                </div>
+        </div>
+        
+         <div class="image"><div class="number">Fig. 2</div>
+            <img src="images/julius_koller_question.png">
+                <div class="description">
+                    <p>Koller, J. (1988). <i>Konceptuàlna Kultùrnal Situàcia (U.F.O.)</i> [Photograph]. Retrieved from http://www.martinjanda.at/
+                    </p>
+                </div>
+        </div>
+        
+         
+         <div class="image"><div class="number">Fig. 2</div>
+            <img src="images/julius_koller_umenie.png">
+                <div class="description">
+                    <p>Koller, J. (1963-1971). <i>Aus der Serie “Anti Happening” (Tennis)</i> [Photograph]. Retrieved from http://foundation.generali.at/
+                    </p>
+                </div>
+        </div>
+
+    
         <div class="image"><tr><div class="number">Fig. 1</div>
             <img src="images/julius_koller.png"/>
                 <div class="description">
-                    <p>Koller, J. (1990). Pingpong (Pingpong Table with Panel) [Photograph]. Retrieved from http://www.artpool.hu/
+                    <p>Koller, J. (1990). <i>Pingpong (Pingpong Table with Panel)</i> [Photograph]. Retrieved from http://www.artpool.hu/
                     </p>
                 </div>
         </div>
 
-        <div class="image"><div class="number">Fig. 2</div>
-            <img src="images/julius_koller_tennis.png">
-                <div class="description">
-                    <p>Koller, J. (n.d.). Aus der Serie “Anti Happening” (Tennis), 1963-71 [Photograph]. Retrieved from http://foundation.generali.at/
-                    </p>
-                </div>
-        </div>
-
+      
         <div class="image"><div class="number">Fig. 3</div>
             <img src="images/health_track_grabowek.png">
-                    <div class="description">
-                    <p>Winiarski, B. (2015, March 24). ['health track' in a city of Grabowek] [Photograph]. Retrieved from http://terenzabudowany.blog.pl/
+                <div class="description">
+                    <p>[<i>‘health track’ in a city of Grabowek</i>] [Forum post]. (2011, November 12). Retrieved from http://gdynia-grabowek.mojeosiedle.pl/
                     </p>
                 </div>
         </div>
 
         <div class="image"><div class="number">Fig. 4</div>
             <img src="images/john_baldessari_what_this_painting_aims_to_do.png">
-                    <div class="description">
-                   <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
-                    </div>
+                <div class="description">
+                   <p>Baldessari, J. (1967). <i>What This Painting Aims to Do.</i> synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm) [Photograph]. Retrieved from: http://whitney.org/</p> 
+
+                </div>
         </div>
 
         <div class="image"><div class="number">Fig. 5</div>
-            <img src="images/stanley_brouwn_this_way_brouwn_1963.jpg">
-                    <div class="description">
-                   <p>Baldessari, J.(b.1931). What This Painting Aims to Do, 1967. Synthetic polymer and oil on canvas, (172.4 × 143.7 × 2.5 cm). Retrieved from: http://whitney.org/</p> 
-                    </div>
+            <img src="images/stanley_brouwn_this_way_brouwn_1961_1.png">
+                <div class="description">
+                   <p>Brouwn, S. (1961). <i>This way Brouwn</i> [Photograph]. Retrieved from https://nowhere-nowhere.org/</p> 
+                </div>
         </div>
+        
+       <div class="image"><div class="number">Fig. 5</div>
+            <img src="images/stanley_brouwn_this_way_brouwn_1961_2.png">
+                <div class="description">
+                   <p>Brouwn, S. (1961). <i>This way Brouwn</i> [Photograph]. Retrieved from https://nowhere-nowhere.org/</p> 
+                </div>
+        </div>
+        
+       <div class="image"><div class="number">Fig. 5</div>
+            <img src="images/stanley_brouwn_this_way_brouwn_1963.png">
+                <div class="description">
+                   <p>Brouwn, S. (1963). <i>This way Brouwn</i> [Photograph]. Retrieved from https://www.wikiart.org/ </p> 
+                </div>
+        </div>
+        
+       <div class="image"><div class="number">Fig. 5</div>
+            <img src="images/trzepak.png">
+                <div class="description">
+                   <p>Winiarski, B. (2015, March 24). [<i>‘health track’ in a city of Grabowek</i>] [Photograph]. Retrieved from http://terenzabudowany.blog.pl/</p> 
+                </div>
+        </div>
+        
+        <div class="image"><div class="number">Fig. 5</div>
+            <img src="images/redzepi_foraging.png">
+                <div class="description">
+                   <p>Rene Redzepi foraging, screen from the film <i>Noma, my perfect storm.</i><br>
+                    Deschamps, Thompson, E. (Producer) & Deschamps, P. (Director). (2015). <i>Noma, my perfect storm</i> [Film Still]. Denmark: Documentree Films.  
+                        </p> 
+                </div>
+        </div>
+        
+        <div class="image"><div class="number">Fig. 5</div>
+            <img src="images/redzepi_noma_recipe.png">
+                <div class="description">
+               <p>Example of a dish served in Noma in autumn consisting of among others, various kinds of moss and tree leaves.<br> 
+                Redzepi, R. (2013). <i>Belle de Boskoop Apples and Caviar</i> [Photograph]. From: Redzepi, R. (2013). <i>A Work in Progress – Noma Recipes.</i>  London. England: Phaidon Press Limited, 162.</p> 
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/oskar_schlemmer_metal_dance.png"/>
+                <div class="description">
+                    <p>Binnemann, R. Bauhaus Archiv Berlin. (1929). <i>Metall Dance (Carla Grosch), Bauhaus Stage Dessau (Design: Oskar Schlemmer)</i> [Photograph]. Retrieved from: http://grosse-plaene.de/
+                    </p>
+                </div>
+        </div>
+        
+         <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/karel_martens.png"/>
+                <div class="description">
+                    <p> <i>With this one, I remember feeling, ‘It is not finished’ — and I liked the feeling. For me, both in printing and in general, it’s an important thing to stop at the right moment.</i><br>
+                    Martens, K. (2016). <i>Reprint</i> [Photograph]. Retrieved from: https://www.nytimes.com/
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/matisse_cut_outs_overview.png"/>
+                <div class="description">
+                    <p> Henri Matisse is his late years was stuck to a wheelchair due to his health. During that time his main creation tool became scissors. He believed that by cuts he was sculpting. He even painted his own papers (with help of assistants, due to his limited mobility) to create his own colours.<br>
+                    <i>Matisse at the Hôtel Régina, Nice</i>  [Photograph]. (c.1952). Retrieved from: https://www.moma.org/
+                    </p>
+                </div>
+        </div>
+        
+         <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/matisse_gouache_papers.png"/>
+                <div class="description">
+                    <p> <i>Matisse in front of gouache-painted papers, Hôtel Régina, Nice</i> [Photograph]. (c.1952). Retrieved from: https://www.moma.org/
+                    </p>
+                </div>
+        </div>
+        
+         <div class="image"><div class="number">Fig. 5</div>
+            <img src="images/robert_filliou_tool_box.png">
+                <div class="description">
+                   <p><i>Permanent Creation Tool-box</i> by Fluxus artist Robert Filliou, (1969).<br>
+                    Filliou, R. (1969). <i>Permanent Creation Tool-box</i> [Photograph]. Retrieved from: http://www.garagecosmos.be/
+                    </p> 
+                </div>
+        </div>
+        
+         <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/bauhaus_physical_education.png"/>
+                <div class="description">
+                    <p> T. Lux Feininger, (1930). Physical Education at the Bauhaus: floor exercises of the women on the roof of the Bauhaus, in front is the gymnastics teacher Karla Grosch. <br>
+                    Lux Feininger, T. (1930). <i>Physical Education at the Bauhaus</i>  [Photograph]. Retrieved from: https://www.bauhaus100.de/
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/gret_palucca.png"/>
+                <div class="description">
+                    <p>Wassily Kandinsky’s four analytical drawings, which were based on photographs of Palucca by Charlotte Rudolph, illustrate how closely the dancer’s style coincided with the Bauhaus aesthetic. The drawings and photographs were published in the arts journal Das Kunstblatt in 1926.<br> 
+
+                    Kandinsky, W. (1926). <i>Dance Curves</i> [Photograph]. Retrieved from: http://www.bagtazocollection.com/
+                    </p>
+                </div>
+        </div>
+        
+         <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_igloo.png"/>
+                <div class="description">
+                    <p> Metal igloo construction designed by Aldo van Eyck. The legs were partially cut in order to dispose of the igloo. Retrieved from the bushes it was found near a school’s playground in Amsterdam. After the discovery, the object was moved to several locations around the Netherlands. Wherever children encountered the object, they did not seem to be bothered by the lacking legs.<br>
+                    Since 2013 some of the playground elements can be found in the Rijksmuseum’s garden.<br>
+
+                    Van Eyck, A. (n.d.) [Photograph] From: Kollarova D. & Van Lingen, A. (2016). <i>Seventeen Playgrounds.</i> Eindhoven: Lecturis
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_space.png"/>
+                <div class="description">
+                    <p> Van Eyck, A. (1954) Dijkstraat Playground in Amsterdam. Retrieved from: http://www.thepolisblog.org/
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_space_hubertus.png"/>
+                <div class="description">
+                    <p> ‘I don’t choose colours,’ Van Eyck once wrote, ‘the rainbow is my favourite colour.’ The rainbow motif can be found more than once in this special accommodation building (orphanage and temporary settlement for parents). <br>
+
+                    Van Eyck, A. (1976-80). <i>Hubertus - Housing for Single Parent Families,</i> Amsterdam. Retrieved from: http://www.architectureguide.nl/
+
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_space.png"/>
+                <div class="description">
+                    <p>Van Eyck, A. (1954). <i>Dijkstraat Playground in Amsterdam</i> [Photograph]. Retrieved from: http://www.thepolisblog.org/
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_saffierenstraat.png"/>
+                <div class="description">
+                    <p> Van Eyck, A. (1950-51). <i>Saffierstraat, playground</i> [Photograph]. Retrieved from: https://walkonwildsideanna.wordpress.com/
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/mondrian.png"/>
+                <div class="description">
+                    <p> Aldo van Eyck’s recurring geometrical, non-hierarchical constructions resemble the work of Piet Mondrian or Theo van Doesburg. <br>
+                    Mondriaan, P. (1925). <i>Tableau No. IV; Lozenge Composition with Red, Gray, Blue, Yellow, and Black</i>  [Photograph]. Retrieved from: http://www.nga.gov/
+                    </p>
+                </div>
+        </div>
+       
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_system.png"/>
+                <div class="description">
+                    <p> Van Eyck, A. (n.d.). <i>Sandpits and playground equipment</i> [Photograph]. Retrieved from: http://www.metropolismag.com/
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_zeelijk_efter_1.png"/>
+                <div class="description">
+                    <p>
+                        Van Eyck, A. (1955-1956). <i>Zeedijk, Amsterdam-Centrum [Photographs].</i> Retrieved from: https://walkonwildsideanna.wordpress.com/ (1)
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_zeelijk_efter_2.png"/>
+                <div class="description">
+                    <p>  Van Eyck, A. (1955-1956). <i>Zeedijk, Amsterdam-Centrum [Photographs].</i> Retrieved from: https://walkonwildsideanna.wordpress.com/ (2)
+                    </p>
+                </div>
+        </div>
+        
+        <div class="image"><tr><div class="number">Fig. 20</div>
+            <img src="images/aldo_van_eyck_zeelijk_efter_3.png"/>
+                <div class="description">
+                    <p>  Van Eyck, A. (1955-1956). <i>Zeedijk, Amsterdam-Centrum [Photographs].</i> Retrieved from: https://walkonwildsideanna.wordpress.com/ (3)
+                    </p>
+                </div>
+        </div>
+        
+  
+        
+        
+    
+        
+        
     </div>
 
     
