@@ -124,6 +124,8 @@ header {
     cursor: pointer;
     
 }
+
+
  #sortzero, #sortone, #sorttwo, #sortthree, #sortfour, #sortfive {
 
     position:relative;
@@ -262,6 +264,9 @@ sup {
     text-align: left;
    
 }
+mark{
+    background-color:white;
+}
 
 
 
@@ -331,6 +336,19 @@ sup {
     margin-left:  40px;
     background: #757575;
 }
+
+.five {
+    margin-left:  0px;
+    background: #eaeaea;
+}
+
+.five:nth-of-type(2){
+    top:5200px !important;
+    margin-left:  0px;
+    background: #424242;
+}
+
+
 
 .image {
     margin-left: 680px;
