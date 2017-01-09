@@ -24,7 +24,7 @@
 
     
     <title>All work and no play</title>
-    <meta name="description" content="1. Think of how you would like to read. 2. Read following your choice of direction. 3. Follow the rules above." />
+    <meta name="description" content="Is it possible to gain something from plain time-wasting? How is it possible that we find more when we do not look for it? Does it happen because when we do ‘nothing’ we are also less serious, because there is nothing to be concerned about?" />
     <meta property="og:title" content="ALL WORK AND NO PLAY" />
     <meta property="og:image" content="https://kabk.github.io/go-theses-17-magda-skibinska/images/julius_koller.png" />
     <meta property="dc:creator" content="Magda Skibinska" />
@@ -168,6 +168,85 @@ $(document).ready(function() {
     })
 });
     
+        $(function() {
+    $("#layerzero").mouseover(
+    function() {
+        $('#sortzero').css('text-decoration', 'underline')
+    });
+        
+        $("#layerzero").mouseout(
+    function() {
+        $('#sortzero').css('text-decoration', 'none')
+    });
+        
+});
+    
+           
+    $(function() {
+    $("#layerone").mouseover(
+    function() {
+        $('#sortone').css('text-decoration', 'underline')
+    });
+        
+        $("#layerone").mouseout(
+    function() {
+        $('#sortone').css('text-decoration', 'none')
+    });
+        
+});
+    
+        $(function() {
+    $("#layertwo").mouseover(
+    function() {
+        $('#sorttwo').css('text-decoration', 'underline')
+    });
+        
+        $("#layertwo").mouseout(
+    function() {
+        $('#sorttwo').css('text-decoration', 'none')
+    });
+        
+});
+    
+            $(function() {
+    $("#layerthree").mouseover(
+    function() {
+        $('#sortthree').css('text-decoration', 'underline')
+    });
+        
+        $("#layerthree").mouseout(
+    function() {
+        $('#sortthree').css('text-decoration', 'none')
+    });
+        
+});
+    
+            $(function() {
+    $("#layerfour").mouseover(
+    function() {
+        $('#sortfour').css('text-decoration', 'underline')
+    });
+        
+        $("#layerfour").mouseout(
+    function() {
+        $('#sortfour').css('text-decoration', 'none')
+    });
+        
+});
+    
+                $(function() {
+    $("#layerfive").mouseover(
+    function() {
+        $('#sortfive').css('text-decoration', 'underline')
+    });
+        
+        $("#layerfive").mouseout(
+    function() {
+        $('#sortfive').css('text-decoration', 'none')
+    });
+        
+});
+    
   
 </script>
 
@@ -177,7 +256,7 @@ $(document).ready(function() {
 <body>
     
 
-<header class="nav-down">
+<header class="nav-down ">
     
     <p id="title">
         All work and no play
@@ -196,12 +275,7 @@ $(document).ready(function() {
      <div class="hidden-print">
         <div id="sort">
             
-            <button id="sortzero">0 –</button>
-            <button id="sortone">1 –</button>
-            <button id="sorttwo">2 –</button>
-            <button id="sortthree">3 –</button>
-            <button id="sortfour">4 –</button>
-            <button id="sortfive">5 </button>
+            <button id="sortzero">0</button> – <button id="sortone">1</button> – <button id="sorttwo">2</button> – <button id="sortthree">3</button> – <button id="sortfour">4</button> – <button id="sortfive">5</button>
         </div> 
     </div>
     
@@ -219,9 +293,9 @@ $(document).ready(function() {
     
 <!--    LAYER FIVE-->
     
-    <div class="layer">  
+    <div id="layerfive" class="layer">  
         <div class="paragraph five">
-            <p class="h1">10.&emsp;COLOPHON</p><br><br>
+            <p class="h1">9.&emsp;COLOPHON</p><br><br>
             <tr>               
             &emsp;&emsp;WRITTEN AND DESIGNED BY<br>
             &emsp;&emsp;Magda Skibinska<br>
@@ -243,7 +317,7 @@ $(document).ready(function() {
         </div>
         
          <div class="paragraph five">
-            <p class="h1">9.&emsp;REFERENCES</p><br><br>
+            <p class="h1">10.&emsp;REFERENCES</p><br><br>
             <tr>
             PRINTED MEDIA<br>
                 &emsp;<u>Brouwn, S.</u> (1961). <i>This way Brouwn, 25-2-61.26-2-61.</i> New York: Verlag Gebr. König Köln.<br>
@@ -335,7 +409,7 @@ $(document).ready(function() {
     
 <!--    LAYER FOUR-->
     
-    <div class="layer">
+    <div id="layerfour" class="layer">
         <div class="paragraph four">
           <p class="h1">0.&emsp;ABSTRACT</p><br><br>
             <tr>
@@ -376,11 +450,11 @@ $(document).ready(function() {
                 </span>
             </tr>
         </div>
-
+</div>
     </div>
     
 <!--   LAYER THREE-->
-    <div class="layer">
+    <div id="layerthree" class="layer">
         <div class="paragraph three">
             <p class="h1">1.&emsp;</p><br><br>
             <tr>
@@ -478,7 +552,7 @@ $(document).ready(function() {
     
 <!--    LAYER TWO -->
     
-    <div class="layer">
+    <div id="layertwo" class="layer">
         <div class="paragraph two">
             <p class="h1">2.&emsp;TAKE THE TIME TO READ</p><br><br>
             <tr>
@@ -552,7 +626,7 @@ $(document).ready(function() {
     
 <!--    LAYER ONE-->
     
-    <div class="layer">
+    <div id="layerone" class="layer">
         <div class="paragraph one">
             <p class="h1">1.&emsp;STARTING POINT</p><br><br>
             <tr>  
@@ -662,12 +736,12 @@ $(document).ready(function() {
     
 <!-- LAYER ZERO-->  
     
-   <div class="layer">  
+   <div id="layerzero" class="layer">  
         <div class="paragraph zero">
             <p class="h1">0.&emsp;TABLE OF CONTENTS</p><br><br>
             <tr>  
                 &emsp;&emsp;Can we creatively profit from doing nothing?<br>
-                &emsp;&emsp;(research question)<br><br>
+                &emsp;&emsp;<i>research question</i><br>
                 The order of the chapters is not static. Rather, it depends on the choice of the viewer. He decides which reading path and which reading order he wishes to follow. The beginning and the end are determined. The reader is invited to make his own rules. An example of an order is to follow the paragraph numbers or to follow the columns of text.<br>
             </tr>
         </div>
