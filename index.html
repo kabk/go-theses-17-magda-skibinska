@@ -58,7 +58,7 @@
         var didScroll;
         var lastScrollTop = 0;
         var delta = 5;
-        var navbarHeight = 40;//$('header').outerHeight();
+        var navbarHeight;//$('header').outerHeight();
 
         $(window).scroll(function(event){
             didScroll = true;
@@ -82,7 +82,6 @@
             $('header').removeClass('nav-down').addClass('nav-up');
         } else {
 
-                console.log( 'reapear')
             //if(st + $(window).height() < $(document).height()) {
                 
                 
@@ -98,6 +97,9 @@
 
 <script>
 $(document).ready(function() {
+    
+    
+    navbarHeight = $('header').outerHeight();
     
     var a = 3;
     var positions = {};
@@ -171,15 +173,15 @@ $(document).ready(function() {
     })
 });
     
-        $(function() {
+    $(function() {
     $("#layerzero").mouseover(
     function() {
-        $('#sortzero').css('text-decoration', 'underline')
+        $('#sortone, #sorttwo, #sortthree, #sortfour, #sortfive').css('color', 'white')
     });
         
         $("#layerzero").mouseout(
     function() {
-        $('#sortzero').css('text-decoration', 'none')
+        $('#sortone, #sorttwo, #sortthree, #sortfour, #sortfive'). css('color', 'black')
     });
         
 });
@@ -188,68 +190,74 @@ $(document).ready(function() {
     $(function() {
     $("#layerone").mouseover(
     function() {
-        $('#sortone').css('text-decoration', 'underline')
+        $('#sortzero, #sorttwo, #sortthree, #sortfour, #sortfive').css('color', 'white')
     });
         
         $("#layerone").mouseout(
     function() {
-        $('#sortone').css('text-decoration', 'none')
+        $('#sortzero, #sorttwo, #sortthree, #sortfour, #sortfive').css('color', 'black')
     });
         
 });
     
-        $(function() {
+    $(function() {
     $("#layertwo").mouseover(
     function() {
-        $('#sorttwo').css('text-decoration', 'underline')
+         $('#sortzero,#sortone, #sortthree, #sortfour, #sortfive').css('color', 'white')
     });
         
         $("#layertwo").mouseout(
     function() {
-        $('#sorttwo').css('text-decoration', 'none')
+         $('#sortzero,#sortone, #sortthree, #sortfour, #sortfive').css('color', 'black')
     });
         
 });
     
-            $(function() {
+    $(function() {
     $("#layerthree").mouseover(
     function() {
-        $('#sortthree').css('text-decoration', 'underline')
+       $('#sortzero, #sortone, #sorttwo, #sortfour, #sortfive').css('color', 'white')
     });
         
         $("#layerthree").mouseout(
     function() {
-        $('#sortthree').css('text-decoration', 'none')
+        $('#sortzero, #sortone, #sorttwo, #sortfour, #sortfive').css('color','b')
     });
         
 });
     
-            $(function() {
+    $(function() {
     $("#layerfour").mouseover(
     function() {
-        $('#sortfour').css('text-decoration', 'underline')
+        $('#sortzero, #sortone, #sorttwo, #sortthree, #sortfive').css('color', 'white')
     });
         
         $("#layerfour").mouseout(
     function() {
-        $('#sortfour').css('text-decoration', 'none')
+        $('#sortzero, #sortone, #sorttwo, #sortthree, #sortfive').css('color', 'black')
     });
         
 });
     
-                $(function() {
+    $(function() {
     $("#layerfive").mouseover(
     function() {
-        $('#sortfive').css('text-decoration', 'underline')
+        $('#sortzero, #sortone, #sorttwo,#sortthree, #sortfour').css('color', 'white')
     });
         
         $("#layerfive").mouseout(
     function() {
-        $('#sortfive').css('text-decoration', 'none')
+        $('#sortzero, #sortone, #sorttwo, #sortthree, #sortfour').css('color', 'black')
     });
         
 });
     
+    
+//    $('#showhide').click(function() {
+//        $('#layerone').removeClass('.one').addclas('.two');
+// 
+//});
+//    
   
 </script>
 
@@ -265,20 +273,16 @@ $(document).ready(function() {
         All work and no play
     </p>  
     
-<!--
-    <p id="layers">
-        SORT LAYER:
-    </p>
--->
-    
     <p id="info">
         Magda Skibinska
     </p>
     
+<!--    <button id="showhide">SHOWHIDE</button>-->
+    
      <div class="hidden-print">
         <div id="sort">
             
-            <button id="sortzero">0</button> – <button id="sortone">1</button> – <button id="sorttwo">2</button> – <button id="sortthree">3</button> – <button id="sortfour">4</button> – <button id="sortfive">5</button>
+            SORT LAYER&emsp;<button id="sortzero">0</button> – <button id="sortone">1</button> – <button id="sorttwo">2</button> – <button id="sortthree">3</button> – <button id="sortfour">4</button> – <button id="sortfive">5</button>
         </div> 
     </div>
     
@@ -292,7 +296,6 @@ $(document).ready(function() {
     
 <div id="map">
     
-
     
 <!--    LAYER FIVE-->
     
