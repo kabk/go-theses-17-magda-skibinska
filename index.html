@@ -10,7 +10,7 @@
     
   <link rel="stylesheet" type="text/css" href="style.css"> 
     
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -22,8 +22,8 @@
 <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
 <script src="jquery.ui.touch-punch.min.js"></script> 
 
-    
-    <title>All work and no play</title>
+    <link rel=”publisher” href=”http://www.magdaskibinska.com”/>
+    <title>all work and no play</title>
     <meta name="description" content="Is it possible to gain something from plain time-wasting? How is it possible that we find more when we do not look for it? Does it happen because when we do ‘nothing’ we are also less serious, because there is nothing to be concerned about?" />
     <meta property="og:title" content="ALL WORK AND NO PLAY" />
     <meta property="og:image" content="https://kabk.github.io/go-theses-17-magda-skibinska/images/julius_koller.png" />
@@ -273,6 +273,13 @@ $(document).ready(function() {
     </script>
 -->
 
+<script>    
+    $('.switch').on('click', function(e) {
+      $('.layer').toggleClass("hierarchy"); //you can list several class names 
+      e.preventDefault();
+    });
+</script>
+    
 
 </head>
     
@@ -298,11 +305,11 @@ $(document).ready(function() {
         LAYER&emsp;<br>
         <button id="sortzero">0</button>&emsp;<button id="sortone">1</button>&emsp;<button id="sorttwo">2</button>&emsp;<button id="sortthree">3</button>&emsp;<button id="sortfour">4</button>&emsp;<button id="sortfive">5</button>
     </div> 
-
-
-    <button id="showhide">SHOWHIDE</button>
+    <div> <button id="switch">SWITCH</button></div>
  
 </header>
+    
+    
     
 <div id="movements">NUMBER OF MOVES: 0</div>
 

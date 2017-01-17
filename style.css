@@ -24,11 +24,7 @@ body {
 
 @font-face {
     font-family: "Arial Narrow";
-    src: local("Arial Narrow.");
-}
-
-#showhide {
-    DISPLAY:BLOCK;
+    src: url("Arial&nbspNarrow.ttf");
 }
 
 #pasteboard {
@@ -106,7 +102,7 @@ header {
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 999999;
-    font-family: "Arial Narrow", sans-serif;
+    font-family: "Arial Narrow", "Arial", sans-serif;
     text-transform: uppercase;
     display: block;
     line-height:20px;
@@ -144,7 +140,7 @@ header {
 
 #movements {
     display:none;
-    font-family: "Arial Narrow", sans-serif;
+    font-family: "Arial Narrow", "Arial", sans-serif;
     font-size:20px;
     line-height: 20px;
     padding-top:2px;
@@ -184,7 +180,7 @@ header {
     border: none;
     background: none;
     font-size: inherit;
-    font-family: "Arial Narrow";
+    font-family: "Arial Narrow", "Arial",  sans-serif;
     padding:0px 0 0 0px;
 
 }
@@ -237,7 +233,7 @@ sup {
 .number{
     font-size:16px;
     position:absolute;
-    font-family: "Arial Narrow", sans-serif;
+    font-family: "Arial Narrow", "Arial",  sans-serif;
     display: block;
     top: 0px;
     left:2px;
@@ -367,6 +363,10 @@ mark a:hover{
 .layer {
     position: absolute;
     
+}
+
+.hierarchy {
+     position: static !important;
 }
 /*
 
