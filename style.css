@@ -12,10 +12,13 @@
 
 */
 @font-face {
-    font-family: 'arialnarrow';
-    src: url ('arialnarrow.ttf') format('truetype');
-}
+    font-family: 'arial_narrowregular';
+    src: url('arialnarrow-webfont.woff2') format('woff2'),
+         url('arialnarrow-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 body {
     font-family: "Arial", sans-serif;
@@ -100,7 +103,7 @@ header {
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 999999;
-    font-family: "arialnarrow", "Arial", sans-serif;
+    font-family: "arial_narrowregular", "Arial", sans-serif;
     text-transform: uppercase;
     display: block;
     line-height:20px;
@@ -138,7 +141,7 @@ header {
 
 #movements {
     display:none;
-    font-family: "arialnarrow", "Arial", sans-serif;
+    font-family: "arial_narrowregular", "Arial", sans-serif;
     font-size:20px;
     line-height: 20px;
     padding-top:2px;
@@ -178,7 +181,7 @@ header {
     border: none;
     background: none;
     font-size: inherit;
-    font-family: "arialnarrow", "Arial",  sans-serif;
+    font-family: "arial_narrowregular", "Arial",  sans-serif;
     padding:0px 0 0 0px;
 
 }
@@ -210,6 +213,7 @@ sup {
     font-size: 10px;
     white-space: nowrap;
     font-weight: bold;
+    font-family: "arial_narrowregular", "Arial",  sans-serif;
 }
 
 .h1 {
@@ -231,7 +235,7 @@ sup {
 .number{
     font-size:16px;
     position:absolute;
-    font-family: "arialnarrow", "Arial",  sans-serif;
+    font-family: "arial_narrowregular", "Arial",  sans-serif;
     display: block;
     top: 0px;
     left:2px;
@@ -330,7 +334,7 @@ sup {
 .footnote {
    position: relative;
     display: inline-block;
-    font:10px "arialnarrow", "Arial", sans-serif;
+    font:10px "Arial", sans-serif;
     line-height: 12px !important;
    margin-top:-10px;
     text-align: left;
@@ -338,8 +342,7 @@ sup {
 }
 mark, mark a{
     background-color:transparent;
-   
-    font-family: "arialnarrow", sans-serif;
+    font-family: "arial_narrowregular", sans-serif;
     font-size: 20px;
     white-space: nowrap;
     color: black;
