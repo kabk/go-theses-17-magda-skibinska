@@ -11,6 +11,11 @@
     positioning problem (right)
 
 */
+@font-face {
+    font-family: 'arialnarrow';
+    src: url ('arialnarrow.ttf') format('truetype');
+}
+
 
 body {
     font-family: "Arial", sans-serif;
@@ -19,10 +24,6 @@ body {
     background:white;
 }
 
-@font-face {
-    font-family: "Arial Narrow";
-    src: url ('arialnarrow.ttf') format('truetype');
-}
 
 #pasteboard {
     left: 210mm;
@@ -99,7 +100,7 @@ header {
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 999999;
-    font-family: "Arial Narrow", "Arial", sans-serif;
+    font-family: "arialnarrow", "Arial", sans-serif;
     text-transform: uppercase;
     display: block;
     line-height:20px;
@@ -137,7 +138,7 @@ header {
 
 #movements {
     display:none;
-    font-family: "Arial Narrow", "Arial", sans-serif;
+    font-family: "arialnarrow", "Arial", sans-serif;
     font-size:20px;
     line-height: 20px;
     padding-top:2px;
@@ -177,7 +178,7 @@ header {
     border: none;
     background: none;
     font-size: inherit;
-    font-family: "Arial Narrow", "Arial",  sans-serif;
+    font-family: "arialnarrow", "Arial",  sans-serif;
     padding:0px 0 0 0px;
 
 }
@@ -230,7 +231,7 @@ sup {
 .number{
     font-size:16px;
     position:absolute;
-    font-family: "Arial Narrow", "Arial",  sans-serif;
+    font-family: "arialnarrow", "Arial",  sans-serif;
     display: block;
     top: 0px;
     left:2px;
@@ -329,7 +330,7 @@ sup {
 .footnote {
    position: relative;
     display: inline-block;
-    font:10px "Arial";
+    font:10px "arialnarrow", "Arial", sans-serif;
     line-height: 12px !important;
    margin-top:-10px;
     text-align: left;
@@ -338,7 +339,7 @@ sup {
 mark, mark a{
     background-color:transparent;
    
-    font-family: "Arial Narrow", sans-serif;
+    font-family: "arialnarrow", sans-serif;
     font-size: 20px;
     white-space: nowrap;
     color: black;
@@ -364,6 +365,16 @@ mark a:hover{
 
 .hierarchy {
      position: static !important;
+/*     width: 100%;*/
+     height: auto;
+     margin: 0 !important;
+     padding-bottom: 20px;
+     display: block;
+    z-index: 10000000000000000;
+}
+.layer.hierarchy:first-child {
+	padding-top: 40px;
+	padding-bottom: 0;
 }
 /*
 
@@ -448,11 +459,20 @@ mark a:hover{
     margin-left:  0px;
     background: #eaeaea;
 }
+/*
 
+#image{
 
+    margin-left:680px;
+    right:40% !important;
+    float:right;
+    padding:0;
+    
+}
+*/
 
 .image {
-    margin-left: 680px;
+    margin-left: 720px;
     cursor: crosshair;
 }
 

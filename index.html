@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
   <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link href="http://files.cargocollective.com/552344/arialnarrow.ttf" rel="stylesheet">
+    
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -251,54 +253,49 @@ $(document).ready(function() {
 });
      </script>
     
+	<!--    SCROLL-->
     <script>
-    $('#showhide').click(
-        function() {
-//        $('#layerone').removeClass('.one').addClass('.two');
-     $(".layer").css({'position':'static'});
-});
-        </script>
+    $( function( ) {
+        $( 'a' ).click(function( event ) {        
+			var href = $( this ).attr( 'href' );
+			
+			if ( href.substr( 0, 1 ) == '#' ) {
+				event.preventDefault( );
+				
+				var target = $( 'a[name="' + href.substr( 1 ) + '"' );
+				if ( target.size( ) > 0 ) {
+					target = target.parent( );
+		
+					$( 'html, body' ).animate( {
+						scrollTop: target.offset( ).top
+					}, 500 );
+			
+					return false;
+				}
+			}
+		} );
     
+//  
+//		$( '#switch' ).on('click', function(e) {
+//		  $( '.layer, .layer:not(#image) > *'  ).toggleClass('hierarchy'); 
+//          $( '.layer, .layer > *' ).removeClass('layer'); //you can list several class names 
+//		  e.preventDefault();
+//		});
+//     } );
+//        
+//        
+//		$( '#switch' ).on('click', function(e) {
+//		  $( '.layer, .paragraph:not(#image) > *'  ).toggleClass('hierarchy'); 
+//          $( '.paragraph, .paragraph > *' ).removeClass('layer'); //you can list several class names 
+//		  e.preventDefault();
+//		});
+//     } );
 
-    <script>
-        $('a').click(function(){
-        $('html, body').animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
-        }, 5000);
-        return false;
-    });
+   
     </script>
-
-
-<script>    
-    $('.switch').on('click', function(e) {
-      $('.layer').toggleClass("hierarchy"); //you can list several class names 
-      e.preventDefault();
-    });
-</script>
-    
-
-<script>
-    var doc = new jsPDF();
-    var specialElementHandlers = {
-        '#editor': function (element, renderer) {
-            return true;
-        }
-    };
-
-    $('#current').click(function () {
-        doc.fromHTML($('html, body').html(), 15, 15, {
-            'width': 170,
-                'elementHandlers': specialElementHandlers
-        });
-        doc.save('magdall_work.pdf');
-    });
-
-</script>
-
-    
+        
 </head>
-    
+
     
 <body>
     
@@ -311,7 +308,7 @@ $(document).ready(function() {
         Magda Skibinska
     </p>  
     <p id="info">
-    <button id="current">Print what you see</button><br>
+        <a href="javascript:window.print()">Print what you see</a><br>
         <a href="./magda_skibinska_thesis_all_work_and_no_play.pdf" download>Print a ready made version</a>
         
     </p>
@@ -321,7 +318,7 @@ $(document).ready(function() {
         LAYER&emsp;<br>
         <button id="sortzero">0</button>&emsp;<button id="sortone">1</button>&emsp;<button id="sorttwo">2</button>&emsp;<button id="sortthree">3</button>&emsp;<button id="sortfour">4</button>&emsp;<button id="sortfive">5</button>
     </div> 
-    <div> <button id="switch">SWITCH</button></div>
+<!--    <div> <button id="switch">SWITCH</button></div>-->
  
 </header>
     
@@ -814,7 +811,7 @@ $(document).ready(function() {
     
 <!-- IMAGES -->      
 
-    <div class="layer">
+    <div class="layer" id="image">
            <div class="image"><a name="01"><tr><div class="number">Fig. 01</div></a>
             <img src="images/richard_long_tent_peru.png"/>
                 <div class="description">
