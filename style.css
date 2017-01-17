@@ -4,9 +4,6 @@
 1. 
     delay scroll from mark "01" link to image
     image linked should stop when in the center not top
-2. 
-    A4 on browser not A4 on print SCALE PROBLEM
-    a4 box repeat height (infinite) auto add?
 3. 
     everything under each other option
     mobile device: disable moving, photos on the right 
@@ -24,7 +21,7 @@ body {
 
 @font-face {
     font-family: "Arial Narrow";
-    src: url("Arial&nbspNarrow.ttf");
+    src: url ('arialnarrow.ttf') format('truetype');
 }
 
 #pasteboard {
