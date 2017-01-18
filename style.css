@@ -118,7 +118,7 @@ header {
     margin: 0.0px 0.0px 0.0px 0.0px; 
     font-size: 20px ;
     text-transform: uppercase;
-    padding-top:2px;
+    padding-top:3px;
     padding-left:5px;
       }
 
@@ -131,7 +131,7 @@ header {
     text-transform: uppercase;
     text-align: right;
     z-index:10000;
-    padding-top:2px;
+    padding-top:3px;
     padding-right:5px;
       }
 
@@ -144,7 +144,7 @@ header {
     font-family: "arial_narrowregular", "Arial", sans-serif;
     font-size:20px;
     line-height: 20px;
-    padding-top:2px;
+    padding-top:3px;
     padding-right:5px;
     
 }
@@ -223,7 +223,7 @@ sup {
     font-family: "Arial";
     font-size: 16px;
     line-height:20px;
-    top: 0.2em;
+    top: 0.3em;
     z-index:2;
 }
 
@@ -427,41 +427,50 @@ mark a:hover{
     top: 40px;
 }
 
+
+
+
+
 .zero {
     margin-left:200px;
-    background: #f9f9f9;
+    background:#a4abab;
 }
+
+/*7a8484*/
 
 .one {
     margin-left:160px;  
-    background: #ececec;
+    background:#c5c5c5;
 }
-
+/*#afb3b5*/
 
 .two {
     margin-left:120px;
-    background: #dfdfdf;
+    background: #d2d2d2;
 }
 
 .three {
     margin-left: 80px;
-    background: #d2d2d2;
+    background: #dfdfdf; 
 }
 
 .four {
     margin-left:  40px;
-    background: #c5c5c5;
+    background: #ececec;
 }
 
 .five {
     margin-left:  0px;
-    background: #eaeaea;
+    background: #f9f9f9;
 }
 
 .five:nth-of-type(2){
+    top:3430px;
     margin-left:  0px;
-    background: #eaeaea;
+  
 }
+
+
 /*
 
 #image{
@@ -475,7 +484,7 @@ mark a:hover{
 */
 
 .image {
-    margin-left: 720px;
+    margin-left: 680px;
     cursor: crosshair;
 }
 
@@ -495,16 +504,25 @@ mark a:hover{
     
 
     @page {
-        size: 210mm 297mm; 
-       margin: 5mm;
+    size: 210mm 297mm; 
+    margin-left: 10mm;
+    margin-right: 7mm;
+    margin-bottom: 20mm;
+/*
+    margin-left: 12mm;
+    margin-right: 15mm;
+    margin-top: 12mm;
+    margin-bottom: 20mm;
+*/
+        
     }
     
     body {
-/*        zoom: 145%;*/
+    zoom: 145%;
     }
     
     #pasteboard {
-        display: none;
+    display: none;
     }
     
     
@@ -518,7 +536,7 @@ mark a:hover{
     }
     
     img description {
-    page-break-before: always;
+/*    page-break-before: always;*/
     }
     
      
@@ -534,7 +552,7 @@ mark a:hover{
 }
     
     .image {
-/*        float: right;*/
+        float: right;
     }
     
 
